@@ -9,6 +9,7 @@ import os
 class Crawler:
 
     def __init__(self, urls: list, blacklist: list, url_count_limit=150, file_name="index.json"):
+        self.site_index = 1
         self.blacklist = blacklist
         self.visited_urls = []
         self.urls_to_visit = urls
@@ -39,11 +40,11 @@ class Crawler:
             self.urls_to_visit.append(url)
 
     def crawl(self, url: str, index):
-        if url is not None and not any(url.startswith(x) for x in self.blacklist):
+        if url is not None and not any(url.startswith(x) for x in self.blacklist) and url not in self.visited_urls:
             try:
                 html = self.download_url(url)
-                for url in self.get_linked_urls(url, html):
-                    self.add_url_to_visit(url)
+                for new_url in self.get_linked_urls(url, html):
+                    self.add_url_to_visit(new_url)
                 filename = f'{self.file_name_prefix}{index}{self.file_name_suffix}'
                 file_info = {"url": url, "file_name": filename}
                 self.pages.append(file_info)
@@ -59,7 +60,6 @@ class Crawler:
         file.close()
 
     def run(self):
-        self.site_index = 1
         while self.urls_to_visit and self.site_index < self.url_count_limit:
             url = self.urls_to_visit.pop(0)
             print(f'Crawling: {url}')
