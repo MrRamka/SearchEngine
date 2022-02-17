@@ -8,13 +8,12 @@ import os
 
 class Crawler:
 
-    def __init__(self, urls=None):
-        if urls is None:
-            urls = []
+    def __init__(self, urls: list, blacklist: list, url_count_limit=150, file_name="index.json"):
+        self.blacklist = blacklist
         self.visited_urls = []
         self.urls_to_visit = urls
-        self.url_count_limit = 150
-        self.file_name = "index.json"
+        self.url_count_limit = url_count_limit
+        self.file_name = file_name
         self.file_name_prefix = "source_"
         self.file_name_suffix = ".html"
         self.pages = []
@@ -40,7 +39,7 @@ class Crawler:
             self.urls_to_visit.append(url)
 
     def crawl(self, url: str, index):
-        if url is not None and not url.startswith("https://account.microsoft.com/"):
+        if url is not None and not any(url.startswith(x) for x in self.blacklist):
             try:
                 html = self.download_url(url)
                 for url in self.get_linked_urls(url, html):
