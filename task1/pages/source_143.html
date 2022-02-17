@@ -1,0 +1,2204 @@
+
+<!DOCTYPE html>
+<html lang="en-us" xml:lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    
+    <meta name="google-site-verification" content="qLsnHJ3MjLUSg72Nhc6_nmNOtzO3HsI02BrWOWCfEh4" />
+    
+
+    
+    <script async type="text/javascript">
+        function loadBackupCss() {
+            var link = document.createElement('link');
+            link.href = "https://cdn.graph.office.net/prod/css/msgraph-portal.css";
+            link.rel = "stylesheet";
+            document.head.appendChild(link);
+    }
+    </script>
+    <link href=https://cdn.graph.office.net/prod/css/msgraph-portal20220113.css rel="stylesheet" onerror=loadBackupCss()>
+    
+            <link href="https://cdn.graph.office.net/prod/css/Moray/v1.9.0/main.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+    <title>Microsoft 365 Dev Center</title>
+    <meta content="Connect to the latest Microsoft 365 developer documentation, conferences, trainings, blog posts, and more..." name="description" />
+            <meta name="audience" content="Developer" />
+            <meta name="author" content="O365devx@microsoft.com" />
+            <meta name="ms.author" content="O365devx@microsoft.com" />
+            <meta name="ms.topic" content="article" />
+            <meta name="ms.suite" content="office365" />
+            <meta name="ms.prod" content="microsoft-365" />
+        <meta data-fd-meta id="ms.pagename" name="ms.pagename" content="microsoft-365/homepage">
+
+
+</head>
+
+<body>
+<script src="https://cdn.graph.office.net/prod/css/Moray/v1.9.0/bundle.min.js"></script>
+
+
+    <script src="https://az416426.vo.msecnd.net/scripts/c/ms.analytics-web-3.1.9.min.js"></script>
+    <!-- CorrelationId: 16cd89b4-8494-4b66-863c-1362582fb829 -->
+<!-- EastUS2.RDE42AAC6B4E73 -->
+<!-- 2022.1.14.1 -->
+<!-- 2/16/2022 9:05:22 PM -->
+
+
+<input type="hidden" id="serviceName" value="office-portals" />
+<input type="hidden" id="awaMarket" value="en-us" />
+
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://partnerresources.azureedge.net/public/2022.1.14.1/scripts/require.min.js"></script>
+
+
+
+        <link rel="stylesheet" href="https://www.microsoft.com/onerfstatics/marketingsites-eus-prod/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/79-4cdd0a/33-ae3d41/a5-4bf7a2/13-8e1ceb/81-32f0c0/5c-b7b685/dd-4224e1/ef-a24652?ver=2.0&amp;_cf=20210618" type="text/css" media="all" /><link rel='stylesheet' href='https://statics-marketingsites-eus-ms-com.akamaized.net/statics/override.css' type='text/css' />
+    
+        <link rel="stylesheet" type="text/css" href="https://partnerresources.azureedge.net/public/2022.1.14.1/styles/icon.css" />
+<link rel="stylesheet" type="text/css" href="https://partnerresources.azureedge.net/public/2022.1.14.1/styles/partnerContent.min.css" />
+
+
+<script>
+    var fdRequireConfig = {
+        baseUrl: 'https://partnerresources.azureedge.net/public/2022.1.14.1/scripts/',
+        
+        context: 'frontdoor',
+        paths: {
+            'jquery': '//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min',
+            'knockout': '//ajax.aspnetcdn.com/ajax/knockout/knockout-3.3.0',
+            'clickstreamTracker': 'https://partnerresources.azureedge.net/public/2022.1.14.1/scripts/clickstreamTracker-module'
+        },
+        bundles: {
+            'https://partnerresources.azureedge.net/public/2022.1.14.1/scripts/partner.min.js': ['local-storage','local-storage-helper','fdjsll','util','meControl','single-signon','customTracker','init','common','text', 'fd-aijs', 'fd-onedsjs', 'fd-onedsdiag'],
+        },
+        waitSeconds: 10,
+    }
+
+    var fdRequire = require.config(fdRequireConfig);
+    fdRequire(['single-signon']);
+</script>
+
+
+<script type="text/javascript">
+    
+    fdRequire(['fd-onedsdiag', 'fd-onedsjs'], function (onedslog, fdonedsjs) {
+        onedslog.init({
+            pageCID: '16cd89b4-8494-4b66-863c-1362582fb829',
+            pageCV: '1OO4bg6qzkuDiBZm.0'
+        });
+
+        fdonedsjs.init({
+            jsPath: "https://js.monitor.azure.com/scripts/c/ms.analytics-web-3.gbl.min.js",
+            key: "1966dbd95aa2467090876e6256147010-acc6e98d-0ba5-4dc2-b624-c3bef3b3d398-7351"
+        });
+    });
+</script>
+
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        fdRequire(['fd-aijs'], function (fdaijs) {
+            fdaijs.init({
+                jsPath: "https://partnerresources.azureedge.net/public/2022.1.14.1/scripts/ai.min.js",
+                key: "e75fed89-857e-4baa-bfa5-9b087df174ce"
+            });
+        });
+    });
+    </script>
+<script src="https://az725175.vo.msecnd.net/scripts/jsll-4.3.1.js" type="text/javascript"></script>
+<script>fdRequire(['fdjsll']);</script>
+
+<script type="text/javascript">
+    // Helper function to log cookie actions
+    function LogCookieAction(name, action) {
+        //Cookie action object
+        var cookieAction = {
+            cookieName: name,
+            eventType: action,
+            url: window.location.href
+        }
+
+        //Don't log the name if it has already been logged.
+        var loggedCookies = sessionStorage.getItem("loggedCookieNames") ? JSON.parse(sessionStorage.getItem("loggedCookieNames")) : [];
+        if (loggedCookies.length > 0 && loggedCookies.indexOf(name) > -1) {
+            return;
+        }
+        //Cache the name
+        loggedCookies.push(name);
+        sessionStorage.setItem("loggedCookieNames", JSON.stringify(loggedCookies));
+        //Log the action
+        $.ajax({
+            url: '/fdapi/cookie',
+            data: JSON.stringify(cookieAction),
+            contentType: 'application/json',
+            type: 'POST'
+        });
+    }
+</script>
+
+    <div id="headerWrapper">
+        
+            <div id="headerArea" class="uhf"  data-m='{"cN":"headerArea","cT":"Area_coreuiArea","id":"a1Body","sN":1,"aN":"Body"}'>
+                <div id="headerRegion"      data-region-key="headerregion" data-m='{"cN":"headerRegion","cT":"Region_coreui-region","id":"r1a1","sN":1,"aN":"a1"}' >
+
+    <div  id="headerUniversalHeader" data-m='{"cN":"headerUniversalHeader","cT":"Module_coreui-universalheader","id":"m1r1a1","sN":1,"aN":"r1a1"}'  data-module-id="Category|headerRegion|coreui-region|headerUniversalHeader|coreui-universalheader">
+        
+
+                        <div id="epb" class="x-hidden x-hidden-vp-mobile-st uhfc-universal-context context-uhf" data-m='{"cN":"epb_cont","cT":"Container","id":"c1m1r1a1","sN":1,"aN":"m1r1a1"}'>
+
+	<div class="c-uhfh-alert f-information epb-container theme-light" role="dialog" aria-label="Promotional Banner" data-m='{"cT":"Container","id":"c1c1m1r1a1","sN":1,"aN":"c1m1r1a1"}' data-pb="[{&quot;Browser&quot;:&quot;anaheim&quot;,&quot;ExtensionType&quot;:&quot;windows10only&quot;,&quot;ExtensionUrl&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=2128969&amp;pc=W037&quot;,&quot;BackgroundColorDarkTheme&quot;:&quot;b-black&quot;,&quot;LogoUrlDarkTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xvsU?ver=e636&quot;,&quot;ActionLinkBackgroundColorDarkTheme&quot;:&quot;btn-white&quot;,&quot;BackgroundColorLightTheme&quot;:&quot;b-white&quot;,&quot;LogoUrlLightTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xvsU?ver=e636&quot;,&quot;ActionLinkBackgroundColorLightTheme&quot;:&quot;btn-light-blue&quot;,&quot;Title&quot;:&quot;Explore the world from your desktop—one photo at a time. Get the Bing Wallpaper app today.&quot;,&quot;Paragraph&quot;:&quot;Bring your desktop to life with daily backgrounds when you get Bing Wallpaper&quot;,&quot;ActionLinkText&quot;:&quot;Get it now&quot;,&quot;ActionLinkAriaLabel&quot;:&quot;Get it now&quot;,&quot;DismissText&quot;:&quot;No thanks&quot;,&quot;DismissAriaLabel&quot;:&quot;No thanks&quot;,&quot;CookieExpiration&quot;:&quot;30&quot;,&quot;CurrentTheme&quot;:&quot;theme-light&quot;},{&quot;Browser&quot;:&quot;edge&quot;,&quot;ExtensionType&quot;:&quot;windows10only&quot;,&quot;ExtensionUrl&quot;:&quot;https://aka.ms/MicrosoftEdgeDownload&quot;,&quot;BackgroundColorDarkTheme&quot;:&quot;b-black&quot;,&quot;LogoUrlDarkTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xdax&quot;,&quot;ActionLinkBackgroundColorDarkTheme&quot;:&quot;btn-white&quot;,&quot;BackgroundColorLightTheme&quot;:&quot;b-white&quot;,&quot;LogoUrlLightTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xdax&quot;,&quot;ActionLinkBackgroundColorLightTheme&quot;:&quot;btn-light-blue&quot;,&quot;Title&quot;:&quot;Try the browser recommended by Microsoft&quot;,&quot;Paragraph&quot;:&quot;Get speed, security and privacy with Microsoft Edge&quot;,&quot;ActionLinkText&quot;:&quot;Download now&quot;,&quot;ActionLinkAriaLabel&quot;:&quot;Download now&quot;,&quot;DismissText&quot;:&quot;No thanks&quot;,&quot;DismissAriaLabel&quot;:&quot;No thanks&quot;,&quot;CookieExpiration&quot;:&quot;30&quot;,&quot;CurrentTheme&quot;:&quot;theme-light&quot;},{&quot;Browser&quot;:&quot;non-anaheim&quot;,&quot;ExtensionType&quot;:&quot;windows10only&quot;,&quot;ExtensionUrl&quot;:&quot;https://microsoftedgewelcome.microsoft.com/launch?url=https%3A%2F%2Faka.ms%2FUHFOandO&quot;,&quot;BackgroundColorDarkTheme&quot;:&quot;b-black&quot;,&quot;LogoUrlDarkTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xdax&quot;,&quot;ActionLinkBackgroundColorDarkTheme&quot;:&quot;btn-white&quot;,&quot;BackgroundColorLightTheme&quot;:&quot;b-white&quot;,&quot;LogoUrlLightTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4xdax&quot;,&quot;ActionLinkBackgroundColorLightTheme&quot;:&quot;btn-light-blue&quot;,&quot;Title&quot;:&quot;Try the browser recommended by Microsoft&quot;,&quot;Paragraph&quot;:&quot;Get speed, security and privacy with Microsoft Edge&quot;,&quot;ActionLinkText&quot;:&quot;Switch now&quot;,&quot;ActionLinkAriaLabel&quot;:&quot;Switch now&quot;,&quot;DismissText&quot;:&quot;No thanks&quot;,&quot;DismissAriaLabel&quot;:&quot;No thanks&quot;,&quot;CookieExpiration&quot;:&quot;30&quot;,&quot;CurrentTheme&quot;:&quot;theme-light&quot;},{&quot;Browser&quot;:&quot;firefox&quot;,&quot;ExtensionType&quot;:&quot;rewards&quot;,&quot;ExtensionUrl&quot;:&quot;https://browserdefaults.microsoft.com/extn/redirect/?xid=6&amp;br=mf&amp;channel=uhf&amp;pc=U564&quot;,&quot;BackgroundColorDarkTheme&quot;:&quot;b-blue&quot;,&quot;LogoUrlDarkTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mFZT?ver=7321&quot;,&quot;ActionLinkBackgroundColorDarkTheme&quot;:&quot;btn-white&quot;,&quot;BackgroundColorLightTheme&quot;:&quot;b-white&quot;,&quot;LogoUrlLightTheme&quot;:&quot;https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mDoE?ver=3feb&quot;,&quot;ActionLinkBackgroundColorLightTheme&quot;:&quot;btn-blue&quot;,&quot;Title&quot;:&quot;Maximize your points with the Microsoft Rewards extension&quot;,&quot;Paragraph&quot;:&quot;Quick access to your daily points and offers&quot;,&quot;ActionLinkText&quot;:&quot;Add it now&quot;,&quot;ActionLinkAriaLabel&quot;:&quot;Add it now&quot;,&quot;DismissText&quot;:&quot;No thanks&quot;,&quot;DismissAriaLabel&quot;:&quot;No thanks&quot;,&quot;CookieExpiration&quot;:&quot;30&quot;,&quot;CurrentTheme&quot;:&quot;theme-light&quot;}]" data-pb-g="true">
+		<div>
+			<div class="c-paragraph">
+				<img alt="" data-src="" src="" class="f-img-lzy" />
+				<span class="c-text-group pb-content">
+					<span class="epb-launch pb-content-heading"></span>
+					<span class="epb-text pb-content-text"></span>
+				</span>
+			</div>
+			<span class="c-group">
+				<button id="close-epb" class="c-action-trigger c-action-cancel glyph-cancel" data-m='{"cN":"PB-dismiss_nonnav","id":"nn1c1c1m1r1a1","sN":1,"aN":"c1c1m1r1a1"}'></button>
+				<a id="epbTryNow" href="" target="_blank" class="epb-launch c-action-trigger c-action-open" data-m='{"cN":"PB-launch_nav","id":"n2c1c1m1r1a1","sN":2,"aN":"c1c1m1r1a1"}'></a>
+			</span>
+		</div>
+	</div>
+
+
+
+
+
+                            
+                        </div>
+
+                        <div data-m='{"cN":"cookiebanner_cont","cT":"Container","id":"c2c1m1r1a1","sN":2,"aN":"c1m1r1a1"}'>
+
+<div id="uhfCookieAlert" data-locale="en-us">
+    <div id="msccBannerV2"></div>
+</div>
+
+                            
+                        </div>
+
+
+
+        <a id="uhfSkipToMain" class="m-skip-to-main" href="javascript:void(0)" data-href="#mainContent" tabindex="0" data-m='{"cN":"Skip to content_nonnav","id":"nn3c1m1r1a1","sN":3,"aN":"c1m1r1a1"}'>Skip to main content</a>
+
+
+<header class="c-uhfh context-uhf no-js c-sgl-stck c-category-header " itemscope="itemscope" data-header-footprint="/DEV_Microsoft365/DEV_Microsoft365Header, fromService: True"   data-magict="true"  itemtype="http://schema.org/Organization">
+    <div class="theme-light js-global-head f-closed  global-head-cont" data-m='{"cN":"Universal Header_cont","cT":"Container","id":"c4c1m1r1a1","sN":4,"aN":"c1m1r1a1"}'>
+        <div class="c-uhfh-gcontainer-st">
+            <button type="button" class="c-action-trigger c-glyph glyph-global-nav-button" aria-label="All Microsoft expand to see list of Microsoft products and services" initialState-label="All Microsoft expand to see list of Microsoft products and services" toggleState-label="Close All Microsoft list" aria-expanded="false" data-m='{"cN":"Mobile menu button_nonnav","id":"nn1c4c1m1r1a1","sN":1,"aN":"c4c1m1r1a1"}'></button>
+            <button type="button" class="c-action-trigger c-glyph glyph-arrow-htmllegacy c-close-search" aria-label="Close search" aria-expanded="false" data-m='{"cN":"Close Search_nonnav","id":"nn2c4c1m1r1a1","sN":2,"aN":"c4c1m1r1a1"}'></button>
+                    <a id="uhfLogo" class="c-logo c-sgl-stk-uhfLogo" itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft" data-m='{"cN":"GlobalNav_Logo_cont","cT":"Container","id":"c3c4c1m1r1a1","sN":3,"aN":"c4c1m1r1a1"}'>
+                        <img alt="" itemprop="logo" class="c-image" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" role="presentation" aria-hidden="true" />
+                        <span itemprop="name" role="presentation" aria-hidden="true">Microsoft</span>
+                    </a>
+            <div class="f-mobile-title">
+                <button type="button" class="c-action-trigger c-glyph glyph-chevron-left" aria-label="See more menu options" data-m='{"cN":"Mobile back button_nonnav","id":"nn4c4c1m1r1a1","sN":4,"aN":"c4c1m1r1a1"}'></button>
+                <span data-global-title="Microsoft home" class="js-mobile-title">Microsoft 365 Dev Center</span>
+                <button type="button" class="c-action-trigger c-glyph glyph-chevron-right" aria-label="See more menu options" data-m='{"cN":"Mobile forward button_nonnav","id":"nn5c4c1m1r1a1","sN":5,"aN":"c4c1m1r1a1"}'></button>
+            </div>
+                    <div class="c-show-pipe x-hidden-vp-mobile-st">
+                        <a id="uhfCatLogo" class="c-logo c-cat-logo" href="https://developer.microsoft.com/en-us/microsoft-365" aria-label="Microsoft 365 Dev Center" itemprop="url" data-m='{"cN":"CatNav_Microsoft 365 Dev Center_nav","id":"n6c4c1m1r1a1","sN":6,"aN":"c4c1m1r1a1"}'>
+                                <span>Microsoft 365 Dev Center</span>
+                        </a>
+                    </div>
+                <div class="cat-logo-button-cont x-hidden">
+                        <button type="button" id="uhfCatLogoButton" class="c-cat-logo-button x-hidden" aria-expanded="false" aria-label="Microsoft 365 Dev Center" data-m='{"cN":"Microsoft 365 Dev Center_nonnav","id":"nn7c4c1m1r1a1","sN":7,"aN":"c4c1m1r1a1"}'>
+                            Microsoft 365 Dev Center
+                        </button>
+                </div>
+
+
+
+                    <nav id="uhf-g-nav" aria-label="Contextual menu" class="c-uhfh-gnav" data-m='{"cN":"Category nav_cont","cT":"Container","id":"c8c4c1m1r1a1","sN":8,"aN":"c4c1m1r1a1"}'>
+            <ul class="js-paddle-items">
+                    <li class="single-link js-nav-menu x-hidden-none-mobile-vp uhf-menu-item">
+                        <a class="c-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365" data-m='{"cN":"CatNav_Home_nav","id":"n1c8c4c1m1r1a1","sN":1,"aN":"c8c4c1m1r1a1"}' > Home </a>
+                    </li>
+                                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="Explore"  aria-expanded="false" data-m='{"cN":"CatNav_Explore_nonnav","id":"nn2c8c4c1m1r1a1","sN":2,"aN":"c8c4c1m1r1a1"}'>Explore </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"Explore_cont","cT":"Container","id":"c3c8c4c1m1r1a1","sN":3,"aN":"c8c4c1m1r1a1"}'>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Microsoft Graph_cont","cT":"Container","id":"c1c3c8c4c1m1r1a1","sN":1,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="Microsoft Graph" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/graph" data-m='{"cN":"CatNav_Microsoft Graph_nav","id":"n1c1c3c8c4c1m1r1a1","sN":1,"aN":"c1c3c8c4c1m1r1a1"}'>Microsoft Graph</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Microsoft identity platform_cont","cT":"Container","id":"c2c3c8c4c1m1r1a1","sN":2,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="Microsoft identity platform" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/identity" data-m='{"cN":"CatNav_Microsoft identity platform_nav","id":"n1c2c3c8c4c1m1r1a1","sN":1,"aN":"c2c3c8c4c1m1r1a1"}'>Microsoft identity platform</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Microsoft Teams_cont","cT":"Container","id":"c3c3c8c4c1m1r1a1","sN":3,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="Microsoft Teams" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-teams" data-m='{"cN":"CatNav_Microsoft Teams_nav","id":"n1c3c3c8c4c1m1r1a1","sN":1,"aN":"c3c3c8c4c1m1r1a1"}'>Microsoft Teams</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"viva_cont","cT":"Container","id":"c4c3c8c4c1m1r1a1","sN":4,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="viva" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/viva" data-m='{"cN":"CatNav_viva_nav","id":"n1c4c3c8c4c1m1r1a1","sN":1,"aN":"c4c3c8c4c1m1r1a1"}'>Microsoft Viva</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Office_cont","cT":"Container","id":"c5c3c8c4c1m1r1a1","sN":5,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="Office" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/office" data-m='{"cN":"CatNav_Office_nav","id":"n1c5c3c8c4c1m1r1a1","sN":1,"aN":"c5c3c8c4c1m1r1a1"}'>Office</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Power Platform_cont","cT":"Container","id":"c6c3c8c4c1m1r1a1","sN":6,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="Power Platform" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/power-platform" data-m='{"cN":"CatNav_Power Platform_nav","id":"n1c6c3c8c4c1m1r1a1","sN":1,"aN":"c6c3c8c4c1m1r1a1"}'>Power Platform</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"SharePoint_cont","cT":"Container","id":"c7c3c8c4c1m1r1a1","sN":7,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="SharePoint" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/sharepoint" data-m='{"cN":"CatNav_SharePoint_nav","id":"n1c7c3c8c4c1m1r1a1","sN":1,"aN":"c7c3c8c4c1m1r1a1"}'>SharePoint</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows_cont","cT":"Container","id":"c8c3c8c4c1m1r1a1","sN":8,"aN":"c3c8c4c1m1r1a1"}'>
+            <a id="Windows" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/windows" data-m='{"cN":"CatNav_Windows_nav","id":"n1c8c3c8c4c1m1r1a1","sN":1,"aN":"c8c3c8c4c1m1r1a1"}'>Windows</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="Resources"  aria-expanded="false" data-m='{"cN":"CatNav_Resources_nonnav","id":"nn4c8c4c1m1r1a1","sN":4,"aN":"c8c4c1m1r1a1"}'>Resources </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"Resources_cont","cT":"Container","id":"c5c8c4c1m1r1a1","sN":5,"aN":"c8c4c1m1r1a1"}'>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Blog_cont","cT":"Container","id":"c1c5c8c4c1m1r1a1","sN":1,"aN":"c5c8c4c1m1r1a1"}'>
+            <a id="Microsoft 365 Blog" class="js-subm-uhf-nav-link" href="https://devblogs.microsoft.com/microsoft365dev/" data-m='{"cN":"CatNav_Blog_nav","id":"n1c1c5c8c4c1m1r1a1","sN":1,"aN":"c1c5c8c4c1m1r1a1"}'>Blog</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Training_cont","cT":"Container","id":"c2c5c8c4c1m1r1a1","sN":2,"aN":"c5c8c4c1m1r1a1"}'>
+            <a id="Training" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365/gallery/?filterBy=Training" data-m='{"cN":"CatNav_Training_nav","id":"n1c2c5c8c4c1m1r1a1","sN":1,"aN":"c2c5c8c4c1m1r1a1"}'>Training</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Samples \u0026 SDKs_cont","cT":"Container","id":"c3c5c8c4c1m1r1a1","sN":3,"aN":"c5c8c4c1m1r1a1"}'>
+            <a id="Microsoft 365 Samples &amp; SDKs" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365/gallery/?filterBy=Samples,SDKs" data-m='{"cN":"CatNav_Samples \u0026 SDKs_nav","id":"n1c3c5c8c4c1m1r1a1","sN":1,"aN":"c3c5c8c4c1m1r1a1"}'>Samples &amp; SDKs</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Videos_cont","cT":"Container","id":"c4c5c8c4c1m1r1a1","sN":4,"aN":"c5c8c4c1m1r1a1"}'>
+            <a id="Microsoft 365 videos" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365/gallery/?filterBy=Videos" data-m='{"cN":"CatNav_Videos_nav","id":"n1c4c5c8c4c1m1r1a1","sN":1,"aN":"c4c5c8c4c1m1r1a1"}'>Videos</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Community_cont","cT":"Container","id":"c5c5c8c4c1m1r1a1","sN":5,"aN":"c5c8c4c1m1r1a1"}'>
+            <a id="Microsoft 365 events" class="js-subm-uhf-nav-link" href="https://pnp.github.io/" data-m='{"cN":"CatNav_Community_nav","id":"n1c5c5c8c4c1m1r1a1","sN":1,"aN":"c5c5c8c4c1m1r1a1"}'>Community</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"All resources_cont","cT":"Container","id":"c6c5c8c4c1m1r1a1","sN":6,"aN":"c5c8c4c1m1r1a1"}'>
+            <a id="Microsoft 365 resources" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365/gallery" data-m='{"cN":"CatNav_All resources_nav","id":"n1c6c5c8c4c1m1r1a1","sN":1,"aN":"c6c5c8c4c1m1r1a1"}'>All resources</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="nested-menu uhf-menu-item">
+                            <div class="c-uhf-menu js-nav-menu">
+                                <button type="button" id="Developer Program"  aria-expanded="false" data-m='{"cN":"CatNav_Developer Program_nonnav","id":"nn6c8c4c1m1r1a1","sN":6,"aN":"c8c4c1m1r1a1"}'>Developer Program </button>
+
+                                <ul class="" data-class-idn="" aria-hidden="true" data-m='{"cN":"Developer Program_cont","cT":"Container","id":"c7c8c4c1m1r1a1","sN":7,"aN":"c8c4c1m1r1a1"}'>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Join Now_cont","cT":"Container","id":"c1c7c8c4c1m1r1a1","sN":1,"aN":"c7c8c4c1m1r1a1"}'>
+            <a id="Join Now" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365/dev-program" data-m='{"cN":"CatNav_Join Now_nav","id":"n1c1c7c8c4c1m1r1a1","sN":1,"aN":"c1c7c8c4c1m1r1a1"}'>Join Now</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"My Dashboard_cont","cT":"Container","id":"c2c7c8c4c1m1r1a1","sN":2,"aN":"c7c8c4c1m1r1a1"}'>
+            <a id="My Dashboard" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/microsoft-365/profile" data-m='{"cN":"CatNav_My Dashboard_nav","id":"n1c2c7c8c4c1m1r1a1","sN":1,"aN":"c2c7c8c4c1m1r1a1"}'>My Dashboard</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Docs_cont","cT":"Container","id":"c3c7c8c4c1m1r1a1","sN":3,"aN":"c7c8c4c1m1r1a1"}'>
+            <a id="Developer Program Docs" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program" data-m='{"cN":"CatNav_Docs_nav","id":"n1c3c7c8c4c1m1r1a1","sN":1,"aN":"c3c7c8c4c1m1r1a1"}'>Docs</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"FAQ_cont","cT":"Container","id":"c4c7c8c4c1m1r1a1","sN":4,"aN":"c7c8c4c1m1r1a1"}'>
+            <a id="Developer Program FAQ" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-faq" data-m='{"cN":"CatNav_FAQ_nav","id":"n1c4c7c8c4c1m1r1a1","sN":1,"aN":"c4c7c8c4c1m1r1a1"}'>FAQ</a>
+            
+        </li>
+                                                    
+                                </ul>
+                            </div>
+                        </li>                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="Microsoft 365 Developer Certification" class="c-uhf-nav-link" href="https://docs.microsoft.com/en-us/learn/certifications/browse/?products=m365&amp;roles=developer" data-m='{"cN":"CatNav_Developer Certification_nav","id":"n8c8c4c1m1r1a1","sN":8,"aN":"c8c4c1m1r1a1"}'>Developer Certification</a>
+                        </li>
+                        <li class="single-link js-nav-menu uhf-menu-item">
+                            <a id="support" class="c-uhf-nav-link" href="https://serviceshub.microsoft.com/" data-m='{"cN":"CatNav_support_nav","id":"n9c8c4c1m1r1a1","sN":9,"aN":"c8c4c1m1r1a1"}'>Support</a>
+                        </li>
+
+
+                <li id="overflow-menu" class="overflow-menu x-hidden uhf-menu-item">
+                        <div class="c-uhf-menu js-nav-menu">
+        <button data-m='{"pid":"More","id":"nn10c8c4c1m1r1a1","sN":10,"aN":"c8c4c1m1r1a1"}' type="button" aria-label="More" aria-expanded="false">More</button>
+        <ul id="overflow-menu-list" aria-hidden="true" class="overflow-menu-list">
+        </ul>
+    </div>
+
+                </li>
+                            </ul>
+            
+        </nav>
+
+
+            <div class="c-uhfh-actions" data-m='{"cN":"Header actions_cont","cT":"Container","id":"c9c4c1m1r1a1","sN":9,"aN":"c4c1m1r1a1"}'>
+                <div class="wf-menu">        <nav id="uhf-c-nav" aria-label="All Microsoft menu" data-m='{"cN":"GlobalNav_cont","cT":"Container","id":"c1c9c4c1m1r1a1","sN":1,"aN":"c9c4c1m1r1a1"}'>
+            <ul class="js-paddle-items">
+                <li>
+                    <div class="c-uhf-menu js-nav-menu">
+                        <button type="button" class="c-button-logo all-ms-nav" aria-label="All Microsoft expand to see list of Microsoft products and services" aria-expanded="false" data-m='{"cN":"GlobalNav_More_nonnav","id":"nn1c1c9c4c1m1r1a1","sN":1,"aN":"c1c9c4c1m1r1a1"}'> <span>All Microsoft</span></button>
+                        <ul class="f-multi-column f-multi-column-6" aria-hidden="true" data-m='{"cN":"More_cont","cT":"Container","id":"c2c1c9c4c1m1r1a1","sN":2,"aN":"c1c9c4c1m1r1a1"}'>
+                                    <li class="c-w0-contr">
+            <ul class="c-w0">
+        <li class="js-nav-menu single-link" data-m='{"cN":"Microsoft 365_cont","cT":"Container","id":"c1c2c1c9c4c1m1r1a1","sN":1,"aN":"c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_0" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/microsoft-365/business/all-business" data-m='{"cN":"W0Nav_Microsoft 365_nav","id":"n1c1c2c1c9c4c1m1r1a1","sN":1,"aN":"c1c2c1c9c4c1m1r1a1"}'>Microsoft 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Azure_cont","cT":"Container","id":"c2c2c1c9c4c1m1r1a1","sN":2,"aN":"c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_1" class="js-subm-uhf-nav-link" href="https://azure.microsoft.com" data-m='{"cN":"W0Nav_Azure_nav","id":"n1c2c2c1c9c4c1m1r1a1","sN":1,"aN":"c2c2c1c9c4c1m1r1a1"}'>Azure</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Office 365_cont","cT":"Container","id":"c3c2c1c9c4c1m1r1a1","sN":3,"aN":"c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_2" class="js-subm-uhf-nav-link" href="https://products.office.com/en-us/business/office" data-m='{"cN":"W0Nav_Office 365_nav","id":"n1c3c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c2c1c9c4c1m1r1a1"}'>Office 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Dynamics 365_cont","cT":"Container","id":"c4c2c1c9c4c1m1r1a1","sN":4,"aN":"c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_3" class="js-subm-uhf-nav-link" href="https://dynamics.microsoft.com/en-us/" data-m='{"cN":"W0Nav_Dynamics 365_nav","id":"n1c4c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c2c1c9c4c1m1r1a1"}'>Dynamics 365</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Power Platform_cont","cT":"Container","id":"c5c2c1c9c4c1m1r1a1","sN":5,"aN":"c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_4" class="js-subm-uhf-nav-link" href="https://powerplatform.microsoft.com/en-us" data-m='{"cN":"W0Nav_Power Platform_nav","id":"n1c5c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c2c1c9c4c1m1r1a1"}'>Power Platform</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Windows 10_cont","cT":"Container","id":"c6c2c1c9c4c1m1r1a1","sN":6,"aN":"c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_5" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/microsoft-365/windows" data-m='{"cN":"W0Nav_Windows 10_nav","id":"n1c6c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c2c1c9c4c1m1r1a1"}'>Windows 10</a>
+            
+        </li>
+            </ul>
+        </li>
+
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c7c2c1c9c4c1m1r1a1","sN":7,"aN":"c2c1c9c4c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_7-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c7c2c1c9c4c1m1r1a1"}'>Products &amp; Services</span>
+    <button id="uhf-navbtn-shellmenu_7-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c7c2c1c9c4c1m1r1a1","sN":2,"aN":"c7c2c1c9c4c1m1r1a1"}'>Products &amp; Services</button>
+    <ul aria-hidden="true" aria-labelledby="uhf-navspn-shellmenu_7-span">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_ProductsandServices_WindowsServer_cont","cT":"Container","id":"c3c7c2c1c9c4c1m1r1a1","sN":3,"aN":"c7c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_8" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/cloud-platform/windows-server" data-m='{"cN":"GlobalNav_More_ProductsandServices_WindowsServer_nav","id":"n1c3c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c7c2c1c9c4c1m1r1a1"}'>Windows Server</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_ProductsandServices_EnterpriseMobilityandSecurity_cont","cT":"Container","id":"c4c7c2c1c9c4c1m1r1a1","sN":4,"aN":"c7c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_9" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/cloud-platform/enterprise-mobility-security" data-m='{"cN":"GlobalNav_More_ProductsandServices_EnterpriseMobilityandSecurity_nav","id":"n1c4c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c7c2c1c9c4c1m1r1a1"}'>Enterprise Mobility + Security</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_ProductsandServices_PowerBI_cont","cT":"Container","id":"c5c7c2c1c9c4c1m1r1a1","sN":5,"aN":"c7c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_10" class="js-subm-uhf-nav-link" href="https://powerbi.microsoft.com/en-us/" data-m='{"cN":"GlobalNav_More_ProductsandServices_PowerBI_nav","id":"n1c5c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c7c2c1c9c4c1m1r1a1"}'>Power BI</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_ProductsandServices_Teams_cont","cT":"Container","id":"c6c7c2c1c9c4c1m1r1a1","sN":6,"aN":"c7c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_11" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" data-m='{"cN":"GlobalNav_More_ProductsandServices_Teams_nav","id":"n1c6c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c7c2c1c9c4c1m1r1a1"}'>Teams</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"DeveloperAndIT_VisualStudio_cont","cT":"Container","id":"c7c7c2c1c9c4c1m1r1a1","sN":7,"aN":"c7c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_12" class="js-subm-uhf-nav-link" href="https://visualstudio.microsoft.com/" data-m='{"cN":"GlobalNav_DeveloperAndIT_VisualStudio_nav","id":"n1c7c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c7c7c2c1c9c4c1m1r1a1"}'>Visual Studio</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_MicrosoftAdvertising_cont","cT":"Container","id":"c8c7c2c1c9c4c1m1r1a1","sN":8,"aN":"c7c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_13" class="js-subm-uhf-nav-link" href="https://go.microsoft.com/fwlink/?linkid=2026462" data-m='{"cN":"GlobalNav_More_MicrosoftAdvertising_nav","id":"n1c8c7c2c1c9c4c1m1r1a1","sN":1,"aN":"c8c7c2c1c9c4c1m1r1a1"}'>Microsoft Advertising</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c8c2c1c9c4c1m1r1a1","sN":8,"aN":"c2c1c9c4c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_14-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c8c2c1c9c4c1m1r1a1"}'>Emerging Technologies</span>
+    <button id="uhf-navbtn-shellmenu_14-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c8c2c1c9c4c1m1r1a1","sN":2,"aN":"c8c2c1c9c4c1m1r1a1"}'>Emerging Technologies</button>
+    <ul aria-hidden="true" aria-labelledby="uhf-navspn-shellmenu_14-span">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_EmergingTechnologies_AI_cont","cT":"Container","id":"c3c8c2c1c9c4c1m1r1a1","sN":3,"aN":"c8c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_15" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/ai/" data-m='{"cN":"GlobalNav_More_EmergingTechnologies_AI_nav","id":"n1c3c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c8c2c1c9c4c1m1r1a1"}'>AI</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_EmergingTechnologies_InternetofThings_cont","cT":"Container","id":"c4c8c2c1c9c4c1m1r1a1","sN":4,"aN":"c8c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_16" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/internet-of-things/" data-m='{"cN":"GlobalNav_More_EmergingTechnologies_InternetofThings_nav","id":"n1c4c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c8c2c1c9c4c1m1r1a1"}'>Internet of Things</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_EmergingTechnologies_AzureCognitiveServices_cont","cT":"Container","id":"c5c8c2c1c9c4c1m1r1a1","sN":5,"aN":"c8c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_17" class="js-subm-uhf-nav-link" href="https://azure.microsoft.com/services/cognitive-services/" data-m='{"cN":"GlobalNav_More_EmergingTechnologies_AzureCognitiveServices_nav","id":"n1c5c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c8c2c1c9c4c1m1r1a1"}'>Azure Cognitive Services</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_EmergingTechnologies_Quantum_cont","cT":"Container","id":"c6c8c2c1c9c4c1m1r1a1","sN":6,"aN":"c8c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_18" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/quantum/" data-m='{"cN":"GlobalNav_More_EmergingTechnologies_Quantum_nav","id":"n1c6c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c8c2c1c9c4c1m1r1a1"}'>Quantum</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_PCsAndDevices_MicrosoftHololens_cont","cT":"Container","id":"c7c8c2c1c9c4c1m1r1a1","sN":7,"aN":"c8c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_19" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"cN":"GlobalNav_More_PCsAndDevices_MicrosoftHololens_nav","id":"n1c7c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c7c8c2c1c9c4c1m1r1a1"}'>Microsoft HoloLens</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_PCsAndDevices_VMAndMixedReality_cont","cT":"Container","id":"c8c8c2c1c9c4c1m1r1a1","sN":8,"aN":"c8c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_20" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/mixed-reality" data-m='{"cN":"GlobalNav_More_PCsAndDevices_VMAndMixedReality_nav","id":"n1c8c8c2c1c9c4c1m1r1a1","sN":1,"aN":"c8c8c2c1c9c4c1m1r1a1"}'>Mixed Reality</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c9c2c1c9c4c1m1r1a1","sN":9,"aN":"c2c1c9c4c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_21-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c9c2c1c9c4c1m1r1a1"}'>Developer &amp; IT</span>
+    <button id="uhf-navbtn-shellmenu_21-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c9c2c1c9c4c1m1r1a1","sN":2,"aN":"c9c2c1c9c4c1m1r1a1"}'>Developer &amp; IT</button>
+    <ul aria-hidden="true" aria-labelledby="uhf-navspn-shellmenu_21-span">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_Docs.microsoft.com_cont","cT":"Container","id":"c3c9c2c1c9c4c1m1r1a1","sN":3,"aN":"c9c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_22" class="js-subm-uhf-nav-link" href="https://docs.microsoft.com/en-us/" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_Docs.microsoft.com_nav","id":"n1c3c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c9c2c1c9c4c1m1r1a1"}'>Docs</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_DeveloperCenter_cont","cT":"Container","id":"c4c9c2c1c9c4c1m1r1a1","sN":4,"aN":"c9c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_23" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_DeveloperCenter_nav","id":"n1c4c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c9c2c1c9c4c1m1r1a1"}'>Developer Center</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_WindowsDevCenter_cont","cT":"Container","id":"c5c9c2c1c9c4c1m1r1a1","sN":5,"aN":"c9c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_24" class="js-subm-uhf-nav-link" href="https://developer.microsoft.com/en-us/windows" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_WindowsDevCenter_nav","id":"n1c5c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c9c2c1c9c4c1m1r1a1"}'>Windows Dev Center</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_Windows_IT_Pro_Center_cont","cT":"Container","id":"c6c9c2c1c9c4c1m1r1a1","sN":6,"aN":"c9c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_25" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/itpro/windows" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_Windows_IT_Pro_Center_nav","id":"n1c6c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c9c2c1c9c4c1m1r1a1"}'>Windows IT Pro Center</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_FastTrack_cont","cT":"Container","id":"c7c9c2c1c9c4c1m1r1a1","sN":7,"aN":"c9c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_26" class="js-subm-uhf-nav-link" href="https://fasttrack.microsoft.com/office" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_FastTrack_nav","id":"n1c7c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c7c9c2c1c9c4c1m1r1a1"}'>FastTrack</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_DeveloperAndIT_Power Platform_cont","cT":"Container","id":"c8c9c2c1c9c4c1m1r1a1","sN":8,"aN":"c9c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_27" class="js-subm-uhf-nav-link" href="https://powerplatform.microsoft.com/en-us" data-m='{"cN":"GlobalNav_More_DeveloperAndIT_Power Platform_nav","id":"n1c8c9c2c1c9c4c1m1r1a1","sN":1,"aN":"c8c9c2c1c9c4c1m1r1a1"}'>Power Platform</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c10c2c1c9c4c1m1r1a1","sN":10,"aN":"c2c1c9c4c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_28-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c10c2c1c9c4c1m1r1a1","sN":1,"aN":"c10c2c1c9c4c1m1r1a1"}'>Partner</span>
+    <button id="uhf-navbtn-shellmenu_28-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c10c2c1c9c4c1m1r1a1","sN":2,"aN":"c10c2c1c9c4c1m1r1a1"}'>Partner</button>
+    <ul aria-hidden="true" aria-labelledby="uhf-navspn-shellmenu_28-span">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Partner_PartnerNetwork_cont","cT":"Container","id":"c3c10c2c1c9c4c1m1r1a1","sN":3,"aN":"c10c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_29" class="js-subm-uhf-nav-link" href="https://partner.microsoft.com/" data-m='{"cN":"GlobalNav_More_Partner_PartnerNetwork_nav","id":"n1c3c10c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c10c2c1c9c4c1m1r1a1"}'>Partner Network</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Partner_SolutionProviders_cont","cT":"Container","id":"c4c10c2c1c9c4c1m1r1a1","sN":4,"aN":"c10c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_30" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/solution-providers" data-m='{"cN":"GlobalNav_More_Partner_SolutionProviders_nav","id":"n1c4c10c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c10c2c1c9c4c1m1r1a1"}'>Solution Providers</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Partner_PartnerCenter_cont","cT":"Container","id":"c5c10c2c1c9c4c1m1r1a1","sN":5,"aN":"c10c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_31" class="js-subm-uhf-nav-link" href="https://partnercenter.microsoft.com/partner/home" data-m='{"cN":"GlobalNav_More_Partner_PartnerCenter_nav","id":"n1c5c10c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c10c2c1c9c4c1m1r1a1"}'>Partner Center</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Partner_CloudHosting_cont","cT":"Container","id":"c6c10c2c1c9c4c1m1r1a1","sN":6,"aN":"c10c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_32" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/cloudandhosting" data-m='{"cN":"GlobalNav_More_Partner_CloudHosting_nav","id":"n1c6c10c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c10c2c1c9c4c1m1r1a1"}'>Cloud Hosting</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c11c2c1c9c4c1m1r1a1","sN":11,"aN":"c2c1c9c4c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_33-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c11c2c1c9c4c1m1r1a1"}'>Industries</span>
+    <button id="uhf-navbtn-shellmenu_33-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c11c2c1c9c4c1m1r1a1","sN":2,"aN":"c11c2c1c9c4c1m1r1a1"}'>Industries</button>
+    <ul aria-hidden="true" aria-labelledby="uhf-navspn-shellmenu_33-span">
+        <li class="js-nav-menu single-link" data-m='{"cN":"Products_ForStudentsAndEducators_Education_cont","cT":"Container","id":"c3c11c2c1c9c4c1m1r1a1","sN":3,"aN":"c11c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_34" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/education?icid=CNavMSCOML0_Studentsandeducation" data-m='{"cN":"GlobalNav_Products_ForStudentsAndEducators_Education_nav","id":"n1c3c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c11c2c1c9c4c1m1r1a1"}'>Education</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Footer_Enterprise_FinanciaServices_cont","cT":"Container","id":"c4c11c2c1c9c4c1m1r1a1","sN":4,"aN":"c11c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_35" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/industry/financial-services/microsoft-cloud-for-financial-services" data-m='{"cN":"GlobalNav_Footer_Enterprise_FinanciaServices_nav","id":"n1c4c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c11c2c1c9c4c1m1r1a1"}'>Financial services</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Industries_Government_cont","cT":"Container","id":"c5c11c2c1c9c4c1m1r1a1","sN":5,"aN":"c11c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_36" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/enterprise/government" data-m='{"cN":"GlobalNav_More_Industries_Government_nav","id":"n1c5c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c11c2c1c9c4c1m1r1a1"}'>Government</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Industries_Health_cont","cT":"Container","id":"c6c11c2c1c9c4c1m1r1a1","sN":6,"aN":"c11c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_37" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/enterprise/health" data-m='{"cN":"GlobalNav_More_Industries_Health_nav","id":"n1c6c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c11c2c1c9c4c1m1r1a1"}'>Health</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"Footer_Enterprise_Health_cont","cT":"Container","id":"c7c11c2c1c9c4c1m1r1a1","sN":7,"aN":"c11c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_38" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/enterprise/manufacturing" data-m='{"cN":"GlobalNav_Footer_Enterprise_Health_nav","id":"n1c7c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c7c11c2c1c9c4c1m1r1a1"}'>Manufacturing &amp; resources</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Industries_Retail_cont","cT":"Container","id":"c8c11c2c1c9c4c1m1r1a1","sN":8,"aN":"c11c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_39" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/en-us/enterprise/retail-consumer-goods" data-m='{"cN":"GlobalNav_More_Industries_Retail_nav","id":"n1c8c11c2c1c9c4c1m1r1a1","sN":1,"aN":"c8c11c2c1c9c4c1m1r1a1"}'>Retail</a>
+            
+        </li>
+    </ul>
+    
+</li>
+<li class="f-sub-menu js-nav-menu nested-menu" data-m='{"cT":"Container","id":"c12c2c1c9c4c1m1r1a1","sN":12,"aN":"c2c1c9c4c1m1r1a1"}'>
+
+    <span id="uhf-navspn-shellmenu_40-span" style="display:none"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn1c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c12c2c1c9c4c1m1r1a1"}'>Other</span>
+    <button id="uhf-navbtn-shellmenu_40-button" type="button"   f-multi-parent="true" aria-expanded="false" data-m='{"id":"nn2c12c2c1c9c4c1m1r1a1","sN":2,"aN":"c12c2c1c9c4c1m1r1a1"}'>Other</button>
+    <ul aria-hidden="true" aria-labelledby="uhf-navspn-shellmenu_40-span">
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Other_Security_cont","cT":"Container","id":"c3c12c2c1c9c4c1m1r1a1","sN":3,"aN":"c12c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_41" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/security/" data-m='{"cN":"GlobalNav_More_Other_Security_nav","id":"n1c3c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c3c12c2c1c9c4c1m1r1a1"}'>Security</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Other_Licensing_cont","cT":"Container","id":"c4c12c2c1c9c4c1m1r1a1","sN":4,"aN":"c12c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_42" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/licensing/" data-m='{"cN":"GlobalNav_More_Other_Licensing_nav","id":"n1c4c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c4c12c2c1c9c4c1m1r1a1"}'>Licensing</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Other_AppSource_cont","cT":"Container","id":"c5c12c2c1c9c4c1m1r1a1","sN":5,"aN":"c12c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_43" class="js-subm-uhf-nav-link" href="https://appsource.microsoft.com/" data-m='{"cN":"GlobalNav_More_Other_AppSource_nav","id":"n1c5c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c5c12c2c1c9c4c1m1r1a1"}'>AppSource</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Other_AzureMarketplace_cont","cT":"Container","id":"c6c12c2c1c9c4c1m1r1a1","sN":6,"aN":"c12c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_44" class="js-subm-uhf-nav-link" href="https://azuremarketplace.microsoft.com/marketplace/" data-m='{"cN":"GlobalNav_More_Other_AzureMarketplace_nav","id":"n1c6c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c6c12c2c1c9c4c1m1r1a1"}'>Azure Marketplace</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_Other_Events_cont","cT":"Container","id":"c7c12c2c1c9c4c1m1r1a1","sN":7,"aN":"c12c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_45" class="js-subm-uhf-nav-link" href="https://events.microsoft.com/" data-m='{"cN":"GlobalNav_More_Other_Events_nav","id":"n1c7c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c7c12c2c1c9c4c1m1r1a1"}'>Events</a>
+            
+        </li>
+        <li class="js-nav-menu single-link" data-m='{"cN":"More_EmergingTechnologies_Research_cont","cT":"Container","id":"c8c12c2c1c9c4c1m1r1a1","sN":8,"aN":"c12c2c1c9c4c1m1r1a1"}'>
+            <a id="shellmenu_46" class="js-subm-uhf-nav-link" href="https://www.microsoft.com/research/" data-m='{"cN":"GlobalNav_More_EmergingTechnologies_Research_nav","id":"n1c8c12c2c1c9c4c1m1r1a1","sN":1,"aN":"c8c12c2c1c9c4c1m1r1a1"}'>Research</a>
+            
+        </li>
+    </ul>
+    
+</li>
+                                                            <li class="f-multi-column-info">
+                                    <a data-m='{"id":"n13c2c1c9c4c1m1r1a1","sN":13,"aN":"c2c1c9c4c1m1r1a1"}' href="https://www.microsoft.com/en-us/sitemap.aspx" aria-label="" class="c-glyph">View Sitemap</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+</div>
+                            <form class="c-search" autocomplete="off" id="searchForm" name="searchForm" role="search" action="https://developer.microsoft.com/en-us/microsoft-365/search" method="GET" data-seAutoSuggest='{"queryParams":{"market":"en-us","clientId":"7F27B536-CF6B-4C65-8638-A0F8CBDFCA65","sources":"Microsoft-Terms,Iris-Products,DCatAll-Products","filter":"+ClientType:StoreWeb","counts":"5,1,5"},"familyNames":{"Apps":"App","Books":"Book","Bundles":"Bundle","Devices":"Device","Fees":"Fee","Games":"Game","MusicAlbums":"Album","MusicTracks":"Song","MusicVideos":"Video","MusicArtists":"Artist","OperatingSystem":"Operating System","Software":"Software","Movies":"Movie","TV":"TV","CSV":"Gift Card","VideoActor":"Actor"}}' data-seautosuggestapi="https://www.microsoft.com/services/api/v3/suggest" data-m='{"cN":"GlobalNav_Search_cont","cT":"Container","id":"c3c1c9c4c1m1r1a1","sN":3,"aN":"c1c9c4c1m1r1a1"}' aria-expanded="false">
+                                <input  id="cli_shellHeaderSearchInput" aria-label="Search Expanded" aria-controls="universal-header-search-auto-suggest-transparent" aria-owns="universal-header-search-auto-suggest-ul" type="search" name="query" role="text" placeholder="Search Microsoft 365 Dev Center" data-m='{"cN":"SearchBox_nav","id":"n1c3c1c9c4c1m1r1a1","sN":1,"aN":"c3c1c9c4c1m1r1a1"}' data-toggle="tooltip" data-placement="right" title="Search Microsoft 365 Dev Center" />
+                                    <button id="search" aria-label="Search Microsoft 365 Dev Center" class="c-glyph" data-m='{"cN":"Search_nav","id":"n2c3c1c9c4c1m1r1a1","sN":2,"aN":"c3c1c9c4c1m1r1a1"}' data-bi-dnt="true" data-bi-mto="true" aria-expanded="false">
+                                        <span role="presentation">Search</span>
+                                        <span role="tooltip" class="c-uhf-tooltip c-uhf-search-tooltip">Search Microsoft 365 Dev Center</span>
+                                    </button>
+                                <div class="m-auto-suggest" id="universal-header-search-auto-suggest-transparent" role="group">
+                                    <ul class="c-menu" id="universal-header-search-auto-suggest-ul" aria-label="Search Suggestions" aria-hidden="true" data-bi-dnt="true" data-bi-mto="true" data-js-auto-suggest-position="default" role="listbox" data-tel="jsll" data-m='{"cN":"search suggestions_cont","cT":"Container","id":"c3c3c1c9c4c1m1r1a1","sN":3,"aN":"c3c1c9c4c1m1r1a1"}'></ul>
+                                </div>
+                                
+                            </form>
+                        <button data-m='{"cN":"cancel-search","pid":"Cancel Search","id":"nn4c1c9c4c1m1r1a1","sN":4,"aN":"c1c9c4c1m1r1a1"}' id="cancel-search" class="cancel-search" aria-label="Cancel Search">
+                            <span>Cancel</span>
+                        </button>
+                    <a id="uhf-shopping-cart"
+                       aria-label="0 items in shopping cart"
+                       class="c-action-trigger c-glyph c-uhf-nav-link glyph-shopping-cart"
+                       href="https://www.microsoft.com/en-us/store/buy"
+                       data-src-dmn-chk="true"
+                       data-m='{"cN":"GlobalNav_Cart_nav","bhvr":82,"id":"n5c1c9c4c1m1r1a1","sN":5,"aN":"c1c9c4c1m1r1a1"}'>
+                        <span class="shopping-cart-amount x-hidden" aria-hidden="true">0</span>
+                        <span class="c-cart-lbl c-st-lbl">Cart</span>
+                        <span id="uhf-shopping-cart-tooltip" class="c-uhf-tooltip" role="tooltip">0 items in shopping cart</span>
+                    </a>
+                            <iframe id="shell-cart-count" data-src="//www.microsoft.com/store/buy/cartcount"></iframe>
+                        <div id="meControl" class="c-me"  data-signinsettings='{"containerId":"meControl","enabled":true,"headerHeight":48,"debug":false,"extensibleLinks":[{"string":"Order history","url":"https://www.microsoftstore.com/store/msusa/en_US/DisplayFindYourOrderPage/nextAction.DisplayAccountOrderListPage","id":""},{"string":"Return history","url":"https://www.microsoftstore.com/store/msusa/en_US/DisplayFindYourOrderPage/nextAction.DisplayAccountReturnListPage","id":""},{"string":"Digital content","url":"https://www.microsoftstore.com/store/msusa/en_US/DisplayFindYourOrderPage/nextAction.DisplayDownloadHistoryPage","id":""},{"string":"Wish list","url":"https://www.microsoftstore.com/store/msusa/en_US/wishlists?Wt.mc_id=wishlist_landingpage","id":""},{"string":"Payment","url":"https://www.microsoftstore.com/store/msusa/en_US/DisplayAddEditPaymentPage/","id":""},{"string":"Profile","url":"https://www.microsoftstore.com/store/msusa/en_US/DisplayEditProfilePage/tab.profile","id":""}],"userData":{"idp":"msa","firstName":"","lastName":"","memberName":"","cid":"","authenticatedState":"3"},"rpData":{"preferredIdp":"msa","msaInfo":{"signInUrl":"/en-us/store/signin","signOutUrl":"/en-us/store/signout","meUrl":"https://login.live.com/me.srf?wa=wsignin1.0"},"aadInfo":{"signOutUrl":"/en-us/store/signout","appId":"","siteUrl":"","blockMsaFed":true}}}' data-m='{"cN":"GlobalNav_Account_cont","cT":"Container","id":"c6c1c9c4c1m1r1a1","sN":6,"aN":"c1c9c4c1m1r1a1"}'>
+                            <div class="msame_Header">
+                                <div class="msame_Header_name st_msame_placeholder">Sign in</div>
+                            </div>
+                            
+                        </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</header>
+
+
+
+
+    </div>
+        </div>
+
+    </div>
+
+    
+    </div>
+
+        <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script><script src="https://www.microsoft.com/onerfstatics/marketingsites-eus-prod/shell/_scrf/js/themes=default/8e-e88b64/93-04b71e/dd-2cee44/49-a00ab0/92-02e55d/7c-dcea75/75-fca72d/ed-e77ee7/d5-bf34c0/a9-078595/7a-7ea8cc/2d-40bdad/23-e8cd2b/96-eb5423/e6-6b0cce/d1-98d78a/a0-23c4ba/a7-f7a340/48-6ed936/2e-ca165a/fc-169dd8/8e-60935c/87-fecbed/96-6ed6eb/c3-eb62e0/ad-ffd6bf/35-621acc/b0-07f293/1e-9d9d16/52-f0367f/1f-b57352/8d-b89eaf/e1-ed258e/20-0b10e2/6b-0f1117/fb-5e9831/37-8473b9?ver=2.0&_cf=20210618&iife=1"></script><script src="https://mem.gfx.ms/meversion?partner=DEV_Microsoft365&market=en-us&uhf=1" defer></script>
+        <script type="text/javascript">
+    if (mscc && mscc.hasConsent()) {
+        
+        var s = document.createElement('img');
+        s.onerror = "var m=document.createElement('meta');m.name='ms.dqp0';m.content='true';document.getElementsByTagName('head')[0].appendChild(m);";
+        s.onload = "var m=document.createElement('meta');m.name='ms.dqp0';m.content='false';document.getElementsByTagName('head')[0].appendChild(m);";
+        s.src = 'https://c1.microsoft.com/c.gif?';
+        s.style.display = "none";
+        document.body.appendChild(s);
+    } else {
+        var cookieDesc = Object.getOwnPropertyDescriptor(Document.prototype, 'cookie') || Object.getOwnPropertyDescriptor(HTMLDocument.prototype, 'cookie');
+        if (cookieDesc && cookieDesc.configurable) {
+            Object.defineProperty(document, 'cookie', {
+                get: function () {
+                    return cookieDesc.get.call(document);
+                },
+                set: function (val) {
+                    var blocked = true;
+                    //In version 2.0 the consent cookie is also called mscc
+                    if (arguments[0].toLowerCase().indexOf("mscc") > -1) {
+                        cookieDesc.set.call(document, val);
+                        blocked = false;
+                    };
+
+                    //If cookie is being deleted we can allow that
+                    let params = arguments[0].split(";");
+                    if (params && params.length > 1) {
+                        let cookie = params[0].split("=");
+                        let expirationDate = params[1].split("=");
+                        let expiringCookie = false;
+                        //Cookie needs to have a past expiration date
+                        if (expirationDate.length > 1 && expirationDate[0].trim().toLowerCase() === "expires") {
+                            let date = new Date(expirationDate[1]);
+                            if (!isNaN(date.getTime()) && date < Date.now()) {
+                                expiringCookie = true;
+                            }
+                        }
+                        //Cookie value needs to be set to blank
+                        if (cookie.length == 2 && cookie[1] === "" && expiringCookie) {
+                            return cookieDesc.set.call(document, val);
+                        }
+                    }
+
+                    if (blocked == true && typeof essentialCookieSuppressionOverrides != 'undefined') {
+                        for (var i in essentialCookieSuppressionOverrides) {
+                            if (essentialCookieSuppressionOverrides[i] != '' &&
+                                arguments[0].toLowerCase().startsWith(essentialCookieSuppressionOverrides[i].toLowerCase()) == true) {
+                                cookieDesc.set.call(document, val);
+                                blocked = false;
+                            }
+                        }
+                    }
+                    if (blocked == true) {
+                        console.log('blocked cookie:' + arguments[0]);
+                        let name = val.match(/^(.+?)=/g);
+                        LogCookieAction(name, "Block");
+                    }
+                }
+            });
+        }
+    }
+    </script>
+
+<script>
+    (function () {
+        $(document).ajaxError(function (event, jqxhr, ajaxSettings, thrownError) {
+            
+            if (jqxhr.status == 401 && jqxhr.getResponseHeader("WWW-Authenticate") != null) {
+                $('#signInPrompt').modal('show');
+            }
+        });
+
+        requirejs.onError = function (err) {
+            console.log(err);
+        };
+
+        $(document).ready(function () {
+            $('#signInCancel').click(function () {
+                $('#signInPrompt').modal('hide');
+            });
+        });
+    })();
+
+    (function (cId, cV) {
+        // Helper function to log timing to Fd
+        function LogTimingToFd(correlationId, correlationVector, timing) {
+            $.ajax({
+                url: '/fdapi/jsll?correlationId=' + correlationId + '&correlationVector=' + correlationVector,
+                data: JSON.stringify(timing),
+                contentType: 'application/json',
+                type: 'POST',
+                beforeSend: function (xhr) {
+                    xhr.overrideMimeType("text/plain");
+                },
+                error: function (e) {
+                    console.log(e);
+                }
+            });
+        }
+
+        // Setup a listener for fdJsllPageCustomPerfReady event, this code need setup before loading fdjsll
+        $(document).on('AboveTheFoldReady', function (e, opts) {
+            if (opts != null && opts['ms.atfe'] != null) {
+                var timing = {};
+                timing["AboveTheFold"] = opts['ms.atfe'] - parseInt(performance.timing.navigationStart);
+
+                // Trigger to log AboveTheFold to FD when user put this code on page:
+                // fdRequire(['customTracker'], function (customTracker) { customTracker.recordAboveTheFoldEnd(); });
+                LogTimingToFd(cId, cV, timing);
+            }
+        });
+
+        // Log FullPageLoad to FD (when partner team explicitly make th call)
+        function LogPageCompletelyReadyToFD() {
+            var timing = {};
+            timing["PageCompletelyReady"] = (new Date().getTime()) - parseInt(performance.timing.navigationStart);
+            LogTimingToFd(cId, cV, timing);
+        }
+        window.LogPageCompletelyReady = LogPageCompletelyReadyToFD;
+
+        // Log PageLoadTime to FD automatically when page load happend
+        var getPageLoadTimeData = function () {
+            var navigationStart = parseInt(performance.timing.navigationStart);
+            var responseStart = parseInt(performance.timing.responseStart);
+            var domainLookupEnd = parseInt(performance.timing.domainLookupEnd);
+            var domContentLoadedEventEnd = parseInt(performance.timing.domContentLoadedEventEnd);
+            var loadEventStart = parseInt(performance.timing.loadEventStart);
+            var requestTime = responseStart - navigationStart;
+
+            var browserPerfData = {};
+            browserPerfData["ClientSide"] = loadEventStart - responseStart;
+            browserPerfData["DOMContentLoaded"] = domContentLoadedEventEnd - domainLookupEnd;
+            browserPerfData["RequestTime"] = requestTime;
+            browserPerfData["PageLoadTime"] = loadEventStart - navigationStart;
+
+            return browserPerfData;
+        }
+        if (document.readyState === 'complete') {
+            LogTimingToFd(cId, cV, getPageLoadTimeData());
+        } else {
+            $(window).on("load", function () {
+                LogTimingToFd(cId, cV, getPageLoadTimeData());
+            });
+        }
+    })('16cd89b4-8494-4b66-863c-1362582fb829', '1OO4bg6qzkuDiBZm.0');
+</script>
+
+<div id="flightPicker" role="presentation" style="display: none"></div>
+    
+            <div id="mainContent" role="main" tabindex="-1" aria-label="Microsoft 365 Dev Center"></div>
+
+
+    
+<script>
+    window.stringResources = {};
+</script>
+<div id="metadata" title="Microsoft 365 Dev Center" description="Connect to the latest Microsoft 365 developer documentation, conferences, trainings, blog posts, and more..." style="visibility:hidden"  auto-swimlane="true" interactive="false" custom = "{}" dateCreated = "4/19/2020 12:00:00 AM" LastPublishedDateTime: = "8/20/2020 12:00:00 AM" LastModifiedDateTime="8/20/2020 12:00:00 AM" industry="" product= "microsoft-365" service= "" suite = "office365" pageKind = "static" technology = ""
+></div>
+
+<div class="mx-0 row" data-bi-area="swimlane_hero">
+    <div id="content" class="dxp-container">
+        <div class="col-12 px-0 px-md-g">
+            <section aria-label="Microsoft 365 hero slide carousel" aria-roledescription="slideshow">
+                <div id="Microsoft365-hero-slide-carousel-status">
+                    <span id="status-msg" class="sr-only" aria-live="polite">Slide %{start} of %{total}. %{slideTitle}</span>
+                </div>             
+                <div class="carousel slide carousel-lg-side-controls carousel-variable-height" data-mount="carousel" data-status="Microsoft365-hero-slide-carousel-status">
+                    <a href="#end-of-microsoft-365-hero-slide-carousel" class="btn btn-link sr-only-focusable w-100 position-absolute">Skip Microsoft 365 hero slide carousel</a>
+                    <div>
+                        <div class="carousel-controls">
+                            <button type="button" class="carousel-control-prev " data-slide="prev">
+                                <span class="sr-only">Previous slide</span>
+                            </button>
+                            <ol class="carousel-indicators" aria-hidden="true">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                            <button type="button" class="carousel-control-next " data-slide="next">
+                                <span class="sr-only">Next slide</span>
+                            </button>
+                        </div>
+                        <div class="carousel-inner">
+                            <section class="carousel-item  active" tabindex="0" aria-label="1 of 3 Develop for the Microsoft 365 platform" aria-roledescription="slide">
+                                <section>
+                                    <div class="card d-block mx-ng mx-md-0">
+                                        <div class="row no-gutters material-surface">
+                                            <div class="d-flex col-md">
+                                                <div class="card-body align-self-center p-4 p-md-5">
+                                                    <h1 class="h2">Develop for the Microsoft&nbsp;365</span> platform</h1>
+                                
+                                                    <div class="mb-3">
+                                                        <p>Build rich solutions that integrate apps and business processes to enhance productivity in the modern workplace.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <picture>
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero4_800x450.webp" media="(min-width: 1400px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero4_640x449.webp" media="(min-width: 1084px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero4_561x421.webp" media="(min-width: 860px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero4_859x557.webp" media="(min-width: 540px)">
+                                                    <img src="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero4_539x349.webp" class="card-img img-object-cover" alt="Photo of woman using Teams on a laptop">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <section class="carousel-item  " aria-hidden="true" aria-label="2 of 3 Get a Teams development environment in seconds" aria-roledescription="slide">
+                                <section>
+                                    <div class="card d-block mx-ng mx-md-0">
+                                        <div class="row no-gutters material-surface">
+                                            <div class="d-flex col-md">
+                                                <div class="card-body align-self-center p-4 p-md-5">
+                                                    <h1 class="h2">Get a Teams development environment in seconds</h1>
+                                
+                                                    <div class="mb-3">
+                                                        <p>Join the Microsoft 365 Developer Program today to get a new instant sandbox with Teams sample data.</p>
+                                                    </div>
+
+                                                    <div class="link-group">
+                                                        <a href="/microsoft-365/profile" class="cta" aria-label="Join the Microsoft 365 Developer Program">Join now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <picture>
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero2_800x450.webp" media="(min-width: 1400px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero2_640x449.webp" media="(min-width: 1084px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero2_561x421.webp" media="(min-width: 860px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero2_859x557.webp" media="(min-width: 540px)">
+                                                    <img src="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero2_539x349.webp" class="card-img img-object-cover" alt="Photo of woman using Teams on a laptop">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                            <section class="carousel-item  " aria-hidden="true" aria-label="3 of 3 Build apps for Microsoft Teams" aria-roledescription="slide">
+                                <section>
+                                    <div class="card d-block mx-ng mx-md-0">
+                                        <div class="row no-gutters material-surface">
+                                            <div class="d-flex col-md">
+                                                <div class="card-body align-self-center p-4 p-md-5">
+                                                    <h1 class="h2">Build apps for Microsoft Teams</h1>
+                                
+                                                    <div class="mb-3">
+                                                        <p>Extend and customize Teams to create and connect apps and workflows.</p>
+                                                    </div>
+
+                                                    <div class="link-group">
+                                                        <a href="/microsoft-teams" class="cta" aria-label="Visit the Microsoft Teams Dev Center">Visit Dev Center</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <picture>
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero3_800x450.webp" media="(min-width: 1400px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero3_640x449.webp" media="(min-width: 1084px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero3_561x421.webp" media="(min-width: 860px)">
+                                                    <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero3_859x557.webp" media="(min-width: 540px)">
+                                                    <img src="https://cdn.graph.office.net/prod/media/microsoft-365/hero/M365_MHero3_539x349.webp" class="card-img img-object-cover" alt="Teams App image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <a id="end-of-microsoft-365-hero-slide-carousel" class="sr-only" tabindex="-1">End of Microsoft 365 hero slide carousel section</a>
+        </div>
+    </div>
+</div>
+
+<div class="dxp-content-banner-blue py-5" data-bi-area="swimlane_scenarios">
+    <div class="dxp-container">
+        <section class="row row-cols-2 row-cols-lg-4 row-cols-sm-2 text-center" aria-label="Featured scenarios for Microsoft 365">
+            <div class="col pt-4">
+                <div class="card" aria-label="Start with the Microsoft identity platform">
+                    <i class="win-icon win-icon-Lock h1 pb-4" aria-hidden="true"></i>
+                    <h2 class="h4 card-header">Start with the Microsoft identity platform</h2>
+                    <div class="link-group">
+                        <a href="/en-us/identity" class="cta" aria-label="Get started with the Microsoft identity platform">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <div class="card" aria-label="Connect to data through Microsoft Graph">
+                    <i class="win-icon win-icon-GraphSymbol h1 pb-4" aria-hidden="true"></i>
+                    <h2 class="h4 card-header">Connect to data through Microsoft Graph</h2>
+                    <div class="link-group">
+                        <a href="/en-us/graph" class="cta" aria-label="Learn more about connecting to data through Microsoft Graph">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <div class="card" aria-label="Extend through Microsoft Teams">
+                    <i class="win-icon win-icon-TeamsLogo h1 pb-4" aria-hidden="true"></i>
+                    <h2 class="h4 card-header">Extend your solution through Microsoft Teams​</h2>
+                    <div class="link-group">
+                        <a href="/en-us/microsoft-teams" class="cta" aria-label="Build for Microsoft Teams">Build for Teams</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <div class="card" aria-label="Publish to Microsoft AppSource">
+                    <i class="win-icon win-icon-Shop h1 pb-4" aria-hidden="true"></i>
+                    <h2 class="h4 card-header">Publish to Microsoft AppSource​</h2>
+                    <div class="link-group">
+                        <a href="https://docs.microsoft.com/en-us/office/dev/store/submit-to-appsource-via-partner-center" class="cta" aria-label="Publish your app to Microsoft AppSource">Publish your app</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="mx-0 row pt-5" data-bi-area="swimlane_productcarousel">
+    <div class="dxp-container">
+        <div class="col-12 px-0 px-md-g">
+            <section aria-label="Integrate with Microsoft 365 apps section" aria-roledescription="slideshow">
+                <h2 class="text-center">Integrate with Microsoft 365 apps</h2>               
+                <div id="Microsoft365-hero-slide-carousel-status">
+                    <span id="status-msg" class="sr-only" aria-live="polite">Slide %{start} of %{total}. %{slideTitle}</span>
+                </div>
+                <div class="carousel slide carousel-product-card" data-mount="carousel" data-loop="false" data-status="Microsoft365-hero-slide-carousel-status">                    
+                    <a href="#end-of-integrate-with-Microsoft-365-apps" class="btn btn-link sr-only-focusable w-100 position-absolute">Skip Integrate with Microsoft 365 apps section</a>    
+                    <div>
+                        <div class="carousel-controls">
+                            <button type="button" class="carousel-control-prev my-4 my-md-5" data-slide="prev" disabled>
+                                <span class="sr-only">Previous slide</span>
+                            </button>
+
+                            <button type="button" class="carousel-control-next my-4 my-md-5" data-slide="next">
+                                <span class="sr-only">Next slide</span>
+                            </button>
+                        </div>
+                        <div class="carousel-inner">
+                            <section class="carousel-item  active" tabindex="0" aria-labelledby="status-msg" aria-roledescription="slide">
+                                <div class="dxp-container">
+                                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 py-5 mx-n2">
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Microsoft_Teams_64x64.svg?v={1/string}" alt="">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/microsoft-teams" aria-label="learn more about Microsoft Teams">Microsoft Teams</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="52" height="96px" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Viva_64x64_v2.svg?v={5/string}" alt="">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/viva" aria-label="learn more about Microsoft Viva">Microsoft Viva</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/SharePoint_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/sharepoint/" aria-label="learn more about SharePoint">SharePoint</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Outlook_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/outlook/" aria-label="learn more about Outlook">Outlook</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Excel_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/excel" aria-label="learn more about Excel">Excel</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="carousel-item  " aria-hidden="true" aria-labelledby="status-msg" aria-roledescription="slide">
+                                <div class="dxp-container">
+                                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 py-5 mx-n2">
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Word_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/word/" aria-label="learn more about Word">Word</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/PowerPoint_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/powerpoint/" aria-label="learn more about PowerPoint">PowerPoint</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/OneDrive_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/onedrive/" aria-label="learn more about OneDrive">OneDrive</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Project_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/project/" aria-label="learn more about Project">Project</a>
+                                                </div>
+                                            </div>
+                                        </div>                                   
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Access_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/access/" aria-label="learn more about Access">Access</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/OneNote_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/onenote/" aria-label="learn more about OneNote">OneNote</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Visio_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/visio/" aria-label="learn more about Visio">Visio</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Yammer_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/yammer/" aria-label="learn more about Yammer">Yammer</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Skype_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/skype/" aria-label="learn more about Skype for Business">Skype for Business</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col slide-item  text-center px-2">
+                                            <div class="card pb-4" data-mount="click-group">
+                                                <img width="96" alt="" class="mx-auto img-white-foreground" src="https://cdn.graph.office.net/prod/media/shared/Kaizala_64x64.svg">
+                                                <div class="px-3 link-group">
+                                                    <a class="cta" href="https://developer.microsoft.com/en-us/kaizala/" aria-label="learn more about Kaizala">Kaizala</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <button class="btn btn-link back-to-controls text-left sr-only-focusable w-100 position-absolute bottom-0">Back to Next and Previous controls</button>
+                </div>
+            </section>
+                <a id="end-of-integrate-with-Microsoft-365-apps" class="sr-only" tabindex="-1">End of Integrate with Microsoft 365 apps section</a>
+        </div>
+    </div>
+</div>
+
+<div class="dxp-content-banner-medium-grey dxp-inline-block " aria-label="Get the latest news" role="region" data-bi-area="swimlane_automated-get-the-latest-news">
+	<h3 class="h3 pt-3 text-center my-3">
+		Get the latest news
+	</h3><div class="carousel slide carousel-product-card dxp-container" data-mount="carousel" data-loop="false" data-status="status-container">
+	<div>
+		<div class="carousel-controls">
+			<button type="button" id="swimlane-get-the-latest-news" class="carousel-control-prev my-4 my-md-5" data-slide="prev"><span class="sr-only">Previous Slide</span></button><button type="button" class="carousel-control-next my-4 my-md-5" data-slide="next"><span class="sr-only">Next Slide</span></button>
+		</div><div class="carousel-inner mx-2">
+			<section class="carousel-item active" tabindex="0" aria-labelledby="status-msg" aria-roledescription="slide">
+				<div class="dxp-container">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5 mx-3">
+						<div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9457">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Microsoft Graph Mailbag - Search DriveItems for Only Files">
+				Microsoft Graph Mailbag - Search DriveItems for Only Files
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In today’s Microsoft Graph Mailbag post, we’ll use the Microsoft Search APIs on Microsoft Graph to return only files/documents." class="my-3 dxp-paragraph-ellipsis">In today’s Microsoft Graph Mailbag post, we’ll use the Microsoft Search APIs on Microsoft Graph to return only files/documents.</p><a href="https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-mailbag-filter-search-driveitems-for-only-files/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Microsoft Graph Mailbag - Search DriveItems for Only Files" target="_blank" data-bi-name="automated_item-id-9457"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9528">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Announcing SharePoint Framework 1.14 Release Candidate – with updates for Viva Connections, Microsoft Teams and SharePoint">
+				Announcing SharePoint Framework 1.14 Release Candidate – with updates for Viva Connections, Microsoft Teams and SharePoint
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="We are excited to announce the availability of the SharePoint Framework (SPFx) 1.14 Release Candidate – with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences." class="my-3 dxp-paragraph-ellipsis">We are excited to announce the availability of the SharePoint Framework (SPFx) 1.14 Release Candidate – with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences.</p><a href="https://devblogs.microsoft.com/microsoft365dev/announcing-sharepoint-framework-1-14-release-candidate-with-updates-for-viva-connections-microsoft-teams-and-sharepoint/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Announcing SharePoint Framework 1.14 Release Candidate – with updates for Viva Connections, Microsoft Teams and SharePoint" target="_blank" data-bi-name="automated_item-id-9528"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9505">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Client Secret expiration now limited to a maximum of two years">
+				Client Secret expiration now limited to a maximum of two years
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Credentials are a vital part of an application registration when your application is used as a confidential client. Learn about the recent changes to Azure AD&#39;s client secret functionality." class="my-3 dxp-paragraph-ellipsis">Credentials are a vital part of an application registration when your application is used as a confidential client. Learn about the recent changes to Azure AD's client secret functionality.</p><a href="https://devblogs.microsoft.com/microsoft365dev/client-secret-expiration-now-limited-to-a-maximum-of-two-years/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Client Secret expiration now limited to a maximum of two years" target="_blank" data-bi-name="automated_item-id-9505"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9501">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Learn from the community: React web app and Azure QnA bot to centralize learning resources">
+				Learn from the community: React web app and Azure QnA bot to centralize learning resources
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="A group of University College London students observed the struggle of having many different portals and websites that students are required to use during their study. They introduced us to the Project Resourcium that aims to support students’ education by centralizing resources in a single portal." class="my-3 dxp-paragraph-ellipsis">A group of University College London students observed the struggle of having many different portals and websites that students are required to use during their study. They introduced us to the Project Resourcium that aims to support students’ education by centralizing resources in a single portal.</p><a href="https://devblogs.microsoft.com/microsoft365dev/learn-from-the-community-react-web-app-and-azure-qna-bot-to-centralize-learning-resources/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Learn from the community: React web app and Azure QnA bot to centralize learning resources" target="_blank" data-bi-name="automated_item-id-9501"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9485">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Breaking changes to the addToReviewSet action in the Microsoft Graph API for eDiscovery (beta)">
+				Breaking changes to the addToReviewSet action in the Microsoft Graph API for eDiscovery (beta)
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Today, we’re announcing an upcoming breaking change for developers using the Microsoft Graph API for eDiscovery (beta). To correct an incorrect mapping, we are renaming the additionalData property to additionalDataOptions." class="my-3 dxp-paragraph-ellipsis">Today, we’re announcing an upcoming breaking change for developers using the Microsoft Graph API for eDiscovery (beta). To correct an incorrect mapping, we are renaming the additionalData property to additionalDataOptions.</p><a href="https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-addtoreviewset-action-in-the-microsoft-graph-api-for-ediscovery-beta/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Breaking changes to the addToReviewSet action in the Microsoft Graph API for eDiscovery (beta)" target="_blank" data-bi-name="automated_item-id-9485"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9481">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Breaking changes to the Microsoft Graph API for eDiscovery (beta)">
+				Breaking changes to the Microsoft Graph API for eDiscovery (beta)
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Today, we’re announcing some upcoming breaking changes for developers using the Microsoft Graph API for eDiscovery. We&#39;re changing the way that holds are applied to custodians so that we can more efficiently batch policy application." class="my-3 dxp-paragraph-ellipsis">Today, we’re announcing some upcoming breaking changes for developers using the Microsoft Graph API for eDiscovery. We're changing the way that holds are applied to custodians so that we can more efficiently batch policy application.</p><a href="https://devblogs.microsoft.com/microsoft365dev/breaking-changes-to-the-microsoft-graph-api-for-ediscovery-beta/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Breaking changes to the Microsoft Graph API for eDiscovery (beta)" target="_blank" data-bi-name="automated_item-id-9481"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9460">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Learn from the community: Microsoft Teams and Moodle online learning solution">
+				Learn from the community: Microsoft Teams and Moodle online learning solution
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Get inspired by the end-to-end solution developed by students using Microsoft Teams and Moodle in the first of our Learn from the Community series." class="my-3 dxp-paragraph-ellipsis">Get inspired by the end-to-end solution developed by students using Microsoft Teams and Moodle in the first of our Learn from the Community series.</p><a href="https://devblogs.microsoft.com/microsoft365dev/learn-from-the-community-microsoft-teams-and-moodle-online-learning-solution/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Learn from the community: Microsoft Teams and Moodle online learning solution" target="_blank" data-bi-name="automated_item-id-9460"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9429">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Microsoft Graph Data Connect: Deploying Azure Synapse Analytics">
+				Microsoft Graph Data Connect: Deploying Azure Synapse Analytics
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Learn about the process of deploying Azure Synapse Analytics with step-by-step instructions to get started and manually deploy your first Azure Synapse workspace for Microsoft Graph Data Connect." class="my-3 dxp-paragraph-ellipsis">Learn about the process of deploying Azure Synapse Analytics with step-by-step instructions to get started and manually deploy your first Azure Synapse workspace for Microsoft Graph Data Connect.</p><a href="https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-deploying-azure-synapse-analytics/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Microsoft Graph Data Connect: Deploying Azure Synapse Analytics" target="_blank" data-bi-name="automated_item-id-9429"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9391">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Combining Microsoft Graph Data Connect data sets in Azure Synapse Analytics">
+				Combining Microsoft Graph Data Connect data sets in Azure Synapse Analytics
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="This article covers the process of combining two data sets extracted via an Azure Synapse pipeline using Microsoft Graph Data Connect (MGDC)." class="my-3 dxp-paragraph-ellipsis">This article covers the process of combining two data sets extracted via an Azure Synapse pipeline using Microsoft Graph Data Connect (MGDC).</p><a href="https://devblogs.microsoft.com/microsoft365dev/combining-microsoft-graph-data-connect-data-sets-in-azure-synapse-analytics/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Combining Microsoft Graph Data Connect data sets in Azure Synapse Analytics" target="_blank" data-bi-name="automated_item-id-9391"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9384">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Updated public preview of SharePoint Framework 1.14 – with updates for Viva Connections, Microsoft Teams and SharePoint">
+				Updated public preview of SharePoint Framework 1.14 – with updates for Viva Connections, Microsoft Teams and SharePoint
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="We are excited to announce an updated public preview of the SharePoint Framework (SPFx) 1.14 - with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences." class="my-3 dxp-paragraph-ellipsis">We are excited to announce an updated public preview of the SharePoint Framework (SPFx) 1.14 - with updates for Viva Connections, Microsoft Teams and SharePoint Online experiences.</p><a href="https://devblogs.microsoft.com/microsoft365dev/updated-public-preview-of-sharepoint-framework-1-14-with-updates-for-viva-connections-microsoft-teams-and-sharepoint/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Updated public preview of SharePoint Framework 1.14 – with updates for Viva Connections, Microsoft Teams and SharePoint" target="_blank" data-bi-name="automated_item-id-9384"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9373">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Outlook JavaScript API deprecation for AttachmentDetails.contentType property ">
+				Outlook JavaScript API deprecation for AttachmentDetails.contentType property 
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Blog win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Learn how to manage your add-in with the deprecation of the AttachmentDetails.contentType property for the Outlook JavaScript API." class="my-3 dxp-paragraph-ellipsis">Learn how to manage your add-in with the deprecation of the AttachmentDetails.contentType property for the Outlook JavaScript API.</p><a href="https://devblogs.microsoft.com/microsoft365dev/outlook-javascript-api-deprecation-for-attachmentdetails-contenttype-property/" class="cta text-blue  dxp-margin-top-10" aria-label="View blog about Outlook JavaScript API deprecation for AttachmentDetails.contentType property " target="_blank" data-bi-name="automated_item-id-9373"><span>View blog</span></a>
+		</div>
+	</div>
+</div>
+</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div><div class="dxp-view-more-link mb-3 text-center col-12">
+		<a class="cta text-blue " aria-label="View more about Get the latest news" href="https://devblogs.microsoft.com/microsoft365dev/" target="_blank" data-bi-name="automated_view-more-about-get-the-latest-news"><span>View more</span></a>
+	</div>
+</div>
+
+<section class="dxp-content-banner-white" data-bi-area="swimlane_solutions">
+    <div class="dxp-container">
+        <div class="card d-block py-5">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_1040x585.png?v={1/string}" media="(min-width: 1400px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_818x460.png?v={1/string}" media="(min-width: 1084px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_542x305.png?v={1/string}" media="(min-width: 768px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_767x431.png?v={1/string}" media="(min-width: 540px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_539x303.png?v={1/string}" media="(min-width:0)">
+                        <img class="w-100 h-auto" srcset="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_818x460.png?v={1/string}" loading="lazy" src="https://cdn.graph.office.net/prod/media/microsoft-365/PowerP_SwimLane_Hero_818x460.png?v={1/string}" alt="Photo of two women working at a computer">
+                    </picture>
+                </div>
+                <div class="d-flex col-md">
+                    <div class="card-body align-self-center p-4 p-md-5" id="Subscription">
+                        <h2 class="pb-3">Use Power Platform to build low-code solutions</h2>
+                        <div class="mb-3 link-group">
+                            <p>Streamline business processes and reporting through Power Apps, Power BI, Power Automate, and Power Virtual Agents. </p>
+                            <a href="/en-us/power-platform" class="cta text-blue" aria-label="Learn more about Power Platform">Learn more</a>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card d-block theme-light material-surface">
+            <div class="row no-gutters">
+                <div class="d-flex col-md">
+                    <div class="card-body align-self-center p-4 p-md-5" id="Experts">
+                        <h2 class="pb-3">Integrate with Office</h2>
+                        <div class="mb-3">
+                            <p>Use Office Add-ins with familiar web technologies to extend Word, Excel, PowerPoint, and Outlook on multiple platforms.</p>
+                            <p>Use Office Scripts in Excel on the web to automate your common tasks.</p>
+                            <div class="link-group">
+                                <a href="/en-us/office" class="cta text-blue" aria-label="Integrate with Office">Integrate with Office</a>
+                                <a href="/en-us/office-scripts" class="cta text-blue" aria-label="Explore Office Scripts">Explore Office Scripts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_1040x585.png?v={1/string}" media="(min-width: 1400px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_818x460.png?v={1/string}" media="(min-width: 1084px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_542x305.png?v={1/string}" media="(min-width: 768px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_767x431.png?v={1/string}" media="(min-width: 540px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_539x303.png?v={1/string}" media="(min-width:0)">
+                        <img class="w-100 h-auto" srcset="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_818x460.png?v={1/string}" src="https://cdn.graph.office.net/prod/media/office/home/M365_Off_SwimLane_818x460.png?v={1/string}" loading="lazy" alt="Photo of a woman working in front of monitors">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="card d-block py-5">
+            <div class="row no-gutters">
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions800x450.png?v={1/string}" media="(min-width: 1400px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions630x472.png?v={1/string}" media="(min-width: 1084px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions542x406.png?v={1/string}" media="(min-width: 768px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions767x288.png?v={1/string}" media="(min-width: 540px)">
+                        <source srcset="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions539x201.png?v={1/string}" media="(min-width:0)">                    
+                        <img class="w-100 h-auto" srcset="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions630x472.png?v={1/string}" src="https://cdn.graph.office.net/prod/media/shared/InstantSandbox_Feature_Resolutions630x472.png?v={1/string}" loading="lazy" alt="Image of a diverse group of people">
+                    </picture>
+                </div>
+                <div class="d-flex col-md">
+                    <div class="card-body align-self-center p-4 p-md-5" id="Sample">
+                        <h2 class="pb-3">Join the Microsoft 365 Developer Program</h2>
+                        <div class="mb-3">
+                            <p>Get a free sandbox, tools, and other resources you need to build solutions for the Microsoft 365 platform, including:</p>
+                            <ul>
+                                <li>A free Microsoft 365 E5 developer subscription</li>
+                                <li>Sample data packs to automate configuration of your developer sandbox</li>
+                                <li>Access to a community of Microsoft 365 experts</li>
+                                <li>Personalized content recommendations</li>
+                            </ul>
+                            <div class="link-group">
+                                <a href="/microsoft-365/dev-program" class="cta text-blue" aria-label="Join the Microsoft 365 Developer Program">Join now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="dxp-content-banner-grey py-5 text-center" data-bi-area="swimlane_featuredtools">
+    <div class="dxp-container">
+        <h2>Featured tools</h2>
+        <section class="row row-cols-lg-4 row-cols-sm-2 py-5" role="region" aria-label="featured tools">
+            <div class="col py-2">
+                <i class="win-icon win-icon-GraphSymbol h1 dxp-microsoft365-blue-text" aria-hidden="true"></i>
+                <h3 class="h4">Graph Explorer</h3>
+                <p>Try Microsoft Graph API requests and see sample responses.</p>
+                <div class="link-group">
+                    <a href="/en-us/graph/graph-explorer" class="cta" aria-label="Explore Microsoft Graph">Explore</a>
+                </div>
+            </div>
+            <div class="col py-2">
+                <i class="win-icon win-icon-TeamsLogo h1 dxp-microsoft365-blue-text" aria-hidden="true"></i>
+                <h3 class="h4">Teams UI Kit</h3>
+                <p>Get core components, scenario-based templates, and best practices for designing Teams apps.</p>
+                <div class="link-group">
+                    <a href="https://www.figma.com/community/file/916836509871353159" class="cta"
+                        aria-label="Explore the Visual Studio Community">Explore</a>
+                </div>
+            </div>
+            <div class="col py-2">
+                <i class="win-icon win-icon-ContactCard h1 dxp-microsoft365-blue-text" aria-hidden="true"></i>
+                <h3 class="h4">Adaptive Cards</h3>
+                <p>Create and share rich, interactive UI content in a consistent way.</p>
+                <div class="link-group">
+                    <a href="https://adaptivecards.io/" class="cta" aria-label="Explore Adaptive Cards">Explore</a>
+                </div>
+            </div>
+            <div class="col py-2">
+                <i class="win-icon win-icon-ScriptLabLogo h1 dxp-microsoft365-blue-text" aria-hidden="true"></i>
+                <h3 class="h4">Script Lab</h3>
+                <p>Use the Office JavaScript API tool to create Office Add-ins for Excel, Word, or PowerPoint.</p>
+                <div class="link-group">
+                    <a href="https://github.com/OfficeDev/script-lab#what-is-script-lab" class="cta"
+                        aria-label="Explore Script Lab">Explore</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="dxp-content-banner-white dxp-inline-block " aria-label="Find resources" role="region" data-bi-area="swimlane_automated-find-resources">
+	<h3 class="h3 pt-3 text-center my-3">
+		Find resources
+	</h3><div class="carousel slide carousel-product-card dxp-container" data-mount="carousel" data-loop="false" data-status="status-container">
+	<div>
+		<div class="carousel-controls">
+			<button type="button" id="swimlane-find-resources" class="carousel-control-prev my-4 my-md-5" data-slide="prev"><span class="sr-only">Previous Slide</span></button><button type="button" class="carousel-control-next my-4 my-md-5" data-slide="next"><span class="sr-only">Next Slide</span></button>
+		</div><div class="carousel-inner mx-2">
+			<section class="carousel-item active" tabindex="0" aria-labelledby="status-msg" aria-roledescription="slide">
+				<div class="dxp-container">
+					<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 py-5 mx-3">
+						<div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="6efA9Du1KkQ">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Viva Connections &amp; SharePoint Framework Community call – 10th of February, 2022">
+				Viva Connections & SharePoint Framework Community call – 10th of February, 2022
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Viva Connections &amp; SharePoint community call on February 10.  Demos - Document Links Accordion SPFx Web Part, New Development Containers for SPFx Samples, and Viva Connections – Consuming SharePoint Online Data in SPFx Adaptive Card Extensions.  Project releases for SharePoint Framework v1.14 RC, PnPjs – v2.12 and v3.0 releasing February 14th, CLI for Microsoft 365 v5.0 Preview, and PnP Modern Search – v4.5.4.  As well, 5 web part samples and 1 ACE sample were delivered.   Announced the updated Microsoft 365 ISV Benefit program.   The host of this call is Patrick Rodgers (Microsoft) | @mediocrebowler.  Q&amp;A takes place as always in chat throughout the call." class="my-3 dxp-paragraph-ellipsis">Viva Connections & SharePoint community call on February 10.  Demos - Document Links Accordion SPFx Web Part, New Development Containers for SPFx Samples, and Viva Connections – Consuming SharePoint Online Data in SPFx Adaptive Card Extensions.  Project releases for SharePoint Framework v1.14 RC, PnPjs – v2.12 and v3.0 releasing February 14th, CLI for Microsoft 365 v5.0 Preview, and PnP Modern Search – v4.5.4.  As well, 5 web part samples and 1 ACE sample were delivered.   Announced the updated Microsoft 365 ISV Benefit program.   The host of this call is Patrick Rodgers (Microsoft) | @mediocrebowler.  Q&A takes place as always in chat throughout the call.</p><a href="https://www.youtube.com/watch/6efA9Du1KkQ" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Viva Connections &amp; SharePoint Framework Community call – 10th of February, 2022" target="_blank" data-bi-name="automated_item-id-6efA9Du1KkQ"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="rv-kG82i3kM">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="SharePoint Framework Design Patterns – Custom Web Part Properties (Part 3)">
+				SharePoint Framework Design Patterns – Custom Web Part Properties (Part 3)
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this 13-minute developer-focused demo regarding web part properties and property panes, Hugo Bernier explains that having a configurable property pane allows you to go from a single-use to a multi-use component with many variations while using same code!  The Quick links web part for example can look very different by changing layout properties - just rendering differences.   Demo focuses on modifications to the getPropertyPaneConfiguration( ) method that contains pages, groups and fields. This PnP Community demo is taken from the Viva Connections &amp; SharePoint Framework Bi-weekly sync call recorded on January 13, 2021." class="my-3 dxp-paragraph-ellipsis">In this 13-minute developer-focused demo regarding web part properties and property panes, Hugo Bernier explains that having a configurable property pane allows you to go from a single-use to a multi-use component with many variations while using same code!  The Quick links web part for example can look very different by changing layout properties - just rendering differences.   Demo focuses on modifications to the getPropertyPaneConfiguration( ) method that contains pages, groups and fields. This PnP Community demo is taken from the Viva Connections & SharePoint Framework Bi-weekly sync call recorded on January 13, 2021.</p><a href="https://www.youtube.com/watch/rv-kG82i3kM" class="cta text-blue  dxp-margin-top-10" aria-label="View video about SharePoint Framework Design Patterns – Custom Web Part Properties (Part 3)" target="_blank" data-bi-name="automated_item-id-rv-kG82i3kM"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="d4d8e755-6555-432a-92b2-572851d14d60">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Single Sign-on (SSO) sample Outlook add-in">
+				Single Sign-on (SSO) sample Outlook add-in
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Code win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="An Outlook add-in sample that accesses Microsoft Graph using single sign-on and adds buttons to the Outlook ribbon." class="my-3 dxp-paragraph-ellipsis">An Outlook add-in sample that accesses Microsoft Graph using single sign-on and adds buttons to the Outlook ribbon.</p><a href="https://github.com/officedev/pnp-officeaddins/tree/main/Samples/auth/Outlook-Add-in-SSO" class="cta text-blue  dxp-margin-top-10" aria-label="View code sample about Single Sign-on (SSO) sample Outlook add-in" target="_blank" data-bi-name="automated_item-id-d4d8e755-6555-432a-92b2-572851d14d60"><span>View code sample</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="xGEh5fDGfck">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Power Audio Player for Power Apps">
+				Power Audio Player for Power Apps
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this 25-minute citizen developer-focused demo, Shadrack Inusah delivers a mobile audio player with a Canvas app front-end and modified audio control functionality integrated with a SharePoint list back-end for images and audio files.   Did you know a Power App Canvas app can be created from within SharePoint?  The app’s UI is composed of labels, icons, navigation, image containers, etc.  Used a layout template.  Shadrack shows how the out-of-box audio control was modified to look and function differently.    This PnP Community demo is taken from the Microsoft Power Apps community call – January 2022, recorded on January 19, 2022." class="my-3 dxp-paragraph-ellipsis">In this 25-minute citizen developer-focused demo, Shadrack Inusah delivers a mobile audio player with a Canvas app front-end and modified audio control functionality integrated with a SharePoint list back-end for images and audio files.   Did you know a Power App Canvas app can be created from within SharePoint?  The app’s UI is composed of labels, icons, navigation, image containers, etc.  Used a layout template.  Shadrack shows how the out-of-box audio control was modified to look and function differently.    This PnP Community demo is taken from the Microsoft Power Apps community call – January 2022, recorded on January 19, 2022.</p><a href="https://www.youtube.com/watch/xGEh5fDGfck" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Power Audio Player for Power Apps" target="_blank" data-bi-name="automated_item-id-xGEh5fDGfck"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="9_O1Uc-_tzA">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Introduction to Adaptive Card Extensions (ACEs) for Microsoft Viva Connections">
+				Introduction to Adaptive Card Extensions (ACEs) for Microsoft Viva Connections
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this 12-minute developer-focused demo – Paolo Pialorsi demystifies working with State and Properties in ACEs that includes managing interfaces for Properties (Property pane or code) and State (code) used by CardView and QuickViews.  The basic property pane is generated by the SPFx scaffolding tool.  Learn about building functions into ACE component and exposing the functions to your ACEs cards.   See how State is updated only for the active component, if 2 components displayed.   This PnP Community demo is taken from the Viva Connections &amp; SharePoint Framework Bi-weekly sync call recorded on January 13, 2021." class="my-3 dxp-paragraph-ellipsis">In this 12-minute developer-focused demo – Paolo Pialorsi demystifies working with State and Properties in ACEs that includes managing interfaces for Properties (Property pane or code) and State (code) used by CardView and QuickViews.  The basic property pane is generated by the SPFx scaffolding tool.  Learn about building functions into ACE component and exposing the functions to your ACEs cards.   See how State is updated only for the active component, if 2 components displayed.   This PnP Community demo is taken from the Viva Connections & SharePoint Framework Bi-weekly sync call recorded on January 13, 2021.</p><a href="https://www.youtube.com/watch/9_O1Uc-_tzA" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Introduction to Adaptive Card Extensions (ACEs) for Microsoft Viva Connections" target="_blank" data-bi-name="automated_item-id-9_O1Uc-_tzA"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="O47gN9P8KAI">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Office Add-ins community call – February 2022">
+				Office Add-ins community call – February 2022
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="This month&#39;s community call features updates on Excel data type APIs (Review card view anatomy, data types, composable building blocks, New Values API and Data Types in Custom Functions), Word Online API updates (Demo of In Preview capabilities – Comment and Track changes, and Coming soon – Fields), and Outlook add-ins and Outlook REST V2 decommission (move to Graph or EWS before Nov 30, APIs impacted, exceptions called out).  This month’s Community spotlight recognizes Maarten van Stam for his continued contributions to this community.  Q&amp;A both at end of call and in chat throughout call.  The call was hosted by David Chesnut (Microsoft) | @davidchesnut.  Recorded February 9, 2022." class="my-3 dxp-paragraph-ellipsis">This month's community call features updates on Excel data type APIs (Review card view anatomy, data types, composable building blocks, New Values API and Data Types in Custom Functions), Word Online API updates (Demo of In Preview capabilities – Comment and Track changes, and Coming soon – Fields), and Outlook add-ins and Outlook REST V2 decommission (move to Graph or EWS before Nov 30, APIs impacted, exceptions called out).  This month’s Community spotlight recognizes Maarten van Stam for his continued contributions to this community.  Q&A both at end of call and in chat throughout call.  The call was hosted by David Chesnut (Microsoft) | @davidchesnut.  Recorded February 9, 2022.</p><a href="https://www.youtube.com/watch/O47gN9P8KAI" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Office Add-ins community call – February 2022" target="_blank" data-bi-name="automated_item-id-O47gN9P8KAI"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="Lbigni_5yic">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Introduction to collaborative Microsoft technologies (1/4)">
+				Introduction to collaborative Microsoft technologies (1/4)
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="#Microsoft365 #MicrosoftCloud #CloudComputing" class="my-3 dxp-paragraph-ellipsis">#Microsoft365 #MicrosoftCloud #CloudComputing</p><a href="https://www.youtube.com/watch/Lbigni_5yic" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Introduction to collaborative Microsoft technologies (1/4)" target="_blank" data-bi-name="automated_item-id-Lbigni_5yic"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="AHF8poXLZ10">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Microsoft 365 Platform Community Call – 8th of February, 2022">
+				Microsoft 365 Platform Community Call – 8th of February, 2022
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="Microsoft 365 platform community call delivered on February 8th.  Demos - Introduction to Intune APIs on Microsoft Graph, Creating engaging and dynamic Viva Connections mobile experiences, and Using the MGT Files Components in your solutions.   Join the Microsoft 365 Developer Program and get a free E5 developer tenant.  Sign up for an event or AMA hosted by Sharing is Caring.   Ten Microsoft 365 Platform related stories released including:  Learn from the community series.  The host of this call was Vesa Juvonen (Microsoft) | @vesajuvonen.  Q&amp;A takes place in chat throughout and live at end of the call." class="my-3 dxp-paragraph-ellipsis">Microsoft 365 platform community call delivered on February 8th.  Demos - Introduction to Intune APIs on Microsoft Graph, Creating engaging and dynamic Viva Connections mobile experiences, and Using the MGT Files Components in your solutions.   Join the Microsoft 365 Developer Program and get a free E5 developer tenant.  Sign up for an event or AMA hosted by Sharing is Caring.   Ten Microsoft 365 Platform related stories released including:  Learn from the community series.  The host of this call was Vesa Juvonen (Microsoft) | @vesajuvonen.  Q&A takes place in chat throughout and live at end of the call.</p><a href="https://www.youtube.com/watch/AHF8poXLZ10" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Microsoft 365 Platform Community Call – 8th of February, 2022" target="_blank" data-bi-name="automated_item-id-AHF8poXLZ10"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="hPmd-IJtcKw">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Building Emoji Rating Web Part with SharePoint Framework">
+				Building Emoji Rating Web Part with SharePoint Framework
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this 13-minute developer-focused demo, Siddharth Vaghasia shows a simple way for employees to give feedback on internal communications (news/article/post) and for managers to view sentiment in report.  Web part uses star-based rating system, captures text comments, stores ratings in SharePoint list, and aligns data to page name.  Configurations – link to list, background colors, ratings text, emoji images, enable/disable comments and count.  Use a Power Automate flow to add web part to page at creation.  This PnP Community demo is taken from the Viva Connections &amp; SharePoint Framework Bi-weekly sync call recorded on January 13, 2021." class="my-3 dxp-paragraph-ellipsis">In this 13-minute developer-focused demo, Siddharth Vaghasia shows a simple way for employees to give feedback on internal communications (news/article/post) and for managers to view sentiment in report.  Web part uses star-based rating system, captures text comments, stores ratings in SharePoint list, and aligns data to page name.  Configurations – link to list, background colors, ratings text, emoji images, enable/disable comments and count.  Use a Power Automate flow to add web part to page at creation.  This PnP Community demo is taken from the Viva Connections & SharePoint Framework Bi-weekly sync call recorded on January 13, 2021.</p><a href="https://www.youtube.com/watch/hPmd-IJtcKw" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Building Emoji Rating Web Part with SharePoint Framework" target="_blank" data-bi-name="automated_item-id-hPmd-IJtcKw"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="ozhbLz1gMi0">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Microsoft 365 PnP Weekly – Episode 152 – Hugo Bernier (Microsoft)">
+				Microsoft 365 PnP Weekly – Episode 152 – Hugo Bernier (Microsoft)
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this installment of the weekly discussion revolving around the latest news and topics on Microsoft 365, hosts – Vesa Juvonen (Microsoft) | @vesajuvonen and Waldek Mastykarz (Microsoft) | @waldekm, are joined by Canada-based Microsoft Cloud Solution Architect and MVP Alum, Hugo Bernier (Microsoft) | @bernierh.  The group’s discussion focused on Hugo’s consulting career – his present-day job as Cloud Solution Architect driving adoption including advising customers on governance and his night job as community advocate - Sharing Is Caring, Samples management, and now Dev Containers.   Microsoft and PnP Community delivered 22 articles last week!  This session was recorded on Monday, February 7, 2022." class="my-3 dxp-paragraph-ellipsis">In this installment of the weekly discussion revolving around the latest news and topics on Microsoft 365, hosts – Vesa Juvonen (Microsoft) | @vesajuvonen and Waldek Mastykarz (Microsoft) | @waldekm, are joined by Canada-based Microsoft Cloud Solution Architect and MVP Alum, Hugo Bernier (Microsoft) | @bernierh.  The group’s discussion focused on Hugo’s consulting career – his present-day job as Cloud Solution Architect driving adoption including advising customers on governance and his night job as community advocate - Sharing Is Caring, Samples management, and now Dev Containers.   Microsoft and PnP Community delivered 22 articles last week!  This session was recorded on Monday, February 7, 2022.</p><a href="https://www.youtube.com/watch/ozhbLz1gMi0" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Microsoft 365 PnP Weekly – Episode 152 – Hugo Bernier (Microsoft)" target="_blank" data-bi-name="automated_item-id-ozhbLz1gMi0"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="08B8xVm5Jxg">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="New Pay as you go Features for Power Apps">
+				New Pay as you go Features for Power Apps
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this 16-minute citizen developer-focused demo, Pay as you go in Public Preview - for premium Power Apps, pay only for what you use after you use it.   Kavishi Agarwal shows how to link your Power Apps environment to an Azure Subscription.  The Subscription comes with base Dataverse capacity for Power Apps storage requirements and pay only for storage overages.  Manage Azure Subscription and Power Apps environment from admin portal where you can add/delete apps and get usage reports.   This PnP Community demo is taken from the Microsoft Power Apps community call – January 2022, recorded on January 19, 2022." class="my-3 dxp-paragraph-ellipsis">In this 16-minute citizen developer-focused demo, Pay as you go in Public Preview - for premium Power Apps, pay only for what you use after you use it.   Kavishi Agarwal shows how to link your Power Apps environment to an Azure Subscription.  The Subscription comes with base Dataverse capacity for Power Apps storage requirements and pay only for storage overages.  Manage Azure Subscription and Power Apps environment from admin portal where you can add/delete apps and get usage reports.   This PnP Community demo is taken from the Microsoft Power Apps community call – January 2022, recorded on January 19, 2022.</p><a href="https://www.youtube.com/watch/08B8xVm5Jxg" class="cta text-blue  dxp-margin-top-10" aria-label="View video about New Pay as you go Features for Power Apps" target="_blank" data-bi-name="automated_item-id-08B8xVm5Jxg"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div><div class="col slide-item ml-2 mb-4 mb-md-0">
+	<div class="card ml-1" data-mount="click-group" id="OQmuKMkbrww">
+	<div class="align-self-start ml-2 d-flex flex-row-reverse" style="min-height:4rem;">
+		<div class="dxp-featured-content">
+			<h5 class="px-3 dxp-header-ellipsis" title="Microsoft Graph Toolkit – Using the People Component in your solutions">
+				Microsoft Graph Toolkit – Using the People Component in your solutions
+			</h5>
+		</div><div class="dxp-microsoft365-blue-background dxp-featured-icon-box" aria-hidden="true" style="aspect-ratio:1;text-align:center;">
+			<i class="win-icon win-icon-Video win-icon dxp-font-size-42 py-1 dxp-featured-icon" aria-hidden="true"></i>
+		</div>
+	</div><div class="col align-self-center">
+		<div class="card-body ">
+			<p title="In this 14-minute developer focused demo, the third session in Sébastien Levert’s MGT series. This session focuses on the Microsoft Graph People control and options for customization.  See how to use the People component to display a group of people or contacts (photos or initials).  Find people trending around you, users from a group or array, show their presence, see managers and direct reports.  Build a custom People component with custom templating.  See code and rendering side-by-side. This PnP Community demo is taken from the weekly Microsoft 365 Platform Community call recorded on January 11, 2022." class="my-3 dxp-paragraph-ellipsis">In this 14-minute developer focused demo, the third session in Sébastien Levert’s MGT series. This session focuses on the Microsoft Graph People control and options for customization.  See how to use the People component to display a group of people or contacts (photos or initials).  Find people trending around you, users from a group or array, show their presence, see managers and direct reports.  Build a custom People component with custom templating.  See code and rendering side-by-side. This PnP Community demo is taken from the weekly Microsoft 365 Platform Community call recorded on January 11, 2022.</p><a href="https://www.youtube.com/watch/OQmuKMkbrww" class="cta text-blue  dxp-margin-top-10" aria-label="View video about Microsoft Graph Toolkit – Using the People Component in your solutions" target="_blank" data-bi-name="automated_item-id-OQmuKMkbrww"><span>View video</span></a>
+		</div>
+	</div>
+</div>
+</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div><div class="dxp-view-more-link mb-3 text-center col-12">
+		<a class="cta text-blue " aria-label="View more about Find resources" href="/en-us/microsoft-365/gallery?filterBy=Videos,Samples,Training,Tools,SDKs" target="_blank" data-bi-name="automated_view-more-about-find-resources"><span>View more</span></a>
+	</div>
+</div>
+
+<div class="dxp-content-banner-blue py-5" id="Resources" data-bi-area="swimlane_resources" role="region" aria-label="get resources">
+    <div class="dxp-container">
+        <div class="row row-cols-lg-5 row-cols-sm-1 text-center">
+            <div class="col pt-4">
+                <i class="win-icon win-icon-Education h1" aria-hidden="true"></i>
+                <h4 class="">Learn on your schedule</h4>
+                <div class="link-group">
+                    <a href="https://docs.microsoft.com/en-us/learn/browse/?products=m365&roles=developer&resource_type=learning%20path" class="cta" aria-label="Browse Microsoft 365 learning paths">Browse learning paths</a>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <i class="win-icon win-icon-Certificate h1" aria-hidden="true"></i>
+                <h4 class="">Get certified</h4>
+                <div class="link-group">
+                    <a href="https://docs.microsoft.com/learn/certifications/exams/ms-600?wt.mc_id=devcomteams_getcertified_webpage_mw" class="cta" aria-label="Get certified for Microsoft 365">Get Microsoft 365 certified</a>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <i class="win-icon win-icon-GetHelpApp h1" aria-hidden="true"></i>
+                <h4 class="">Ask a question on Q&A</h4>
+                <div class="link-group">
+                    <a href="https://docs.microsoft.com/en-us/answers/products/m365" class="cta" aria-label="Get support">Get support</a>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <i class="win-icon win-icon-FeatureRequest h1" aria-hidden="true"></i>
+                <h4 class="">Suggest a feature</h4>
+                <div class="link-group">
+                    <a href="https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform" class="cta" aria-label="Submit your idea on Tech Community">Submit your idea</a>
+                </div>
+            </div>
+            <div class="col pt-4">
+                <i class="win-icon win-icon-FeatureRequest h1" aria-hidden="true"></i>
+                <h4 class="">Certify your app</h4>
+                <div class="link-group">
+                    <a href="/microsoft-365/app-compliance-program" class="cta" aria-label="Certify your app through the Microsoft 365 App Compliance Program">Join the compliance program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+
+
+        <div class="mx-0 row py-2" id="socialMediaContainer" role="navigation" aria-label="Social Media Links" data-bi-area="social-media-bar">                
+            <div class="dxp-container">
+                <section class="dxp-display-flex-justify-space-between-flex-wrap" role="region" aria-label="social media links">
+                    <div>
+                        <div class="base font-weight-normal align-middle mr-g d-inline dxp-black-opacity-60-text">Follow us</div>
+
+                        <ul class="list-inline mb-0 d-inline-block align-middle">
+                            <li class="list-inline-item mr-g">
+                                <a class="d-inline-block" aria-label="Follow us on Facebook" href="https://www.facebook.com/Microsoft365Developer" target="_blank" title="Follow us on Facebook" data-bi-name="social_follow-us-on-facebook">
+                                    <i class="win-icon win-icon-FacebookLogo dxp-font-size-24 text-black"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-g">
+                                <a class="d-inline-block" aria-label="Follow us on Twitter" href="https://twitter.com/Microsoft365Dev" target="_blank" data-bi-name="social_follow-us-on-twitter" title="Follow us on Twitter">
+                                    <i class="win-icon win-icon-TwitterLogo dxp-font-size-24 text-black"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    
+                            <div>
+                                <div class="dxp-margin-top-bottom-4-left-minus2 dxp-social-float dxp-social-youtube-link-full" itemscope itemtype="http://schema.org/Organization">
+                                    <a href="https://www.youtube.com/t/terms" target="_blank" data-bi-name="social_youtube-terms-and-service">
+                                        <span class="dxp-black-opacity-60-text dxp-font-weight-400">YouTube terms of service</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                    <div>
+                        <div class="base font-weight-normal align-middle mr-g d-inline dxp-black-opacity-60-text">Share this page</div>
+
+                        <ul class="list-inline mb-0 d-inline-block align-middle">
+                            <li class="align-bottom list-inline-item mr-g">
+                                <a class="d-inline-block social-media-share" aria-label="Share this page on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" title="Share this page on Facebook" data-bi-name="social_share-this-page-on-facebook">
+                                    <i class="win-icon win-icon-FacebookLogo dxp-font-size-24 text-black"></i>
+                                </a>
+                            </li>
+                            <li class="align-bottom list-inline-item mr-g">
+                                <a class="d-inline-block social-media-share" aria-label="Share this page on Twitter" href="https://twitter.com/intent/tweet?url=" target="_blank" title="Share this page on Twitter" data-bi-name="social_share-this-page-on-twitter">
+                                    <i class="win-icon win-icon-TwitterLogo dxp-font-size-24 text-black"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-g">
+                                <div id="teams-share" class="teams-share-button" data-href="https://developer.microsoft.com/en-us/microsoft-365"></div>
+                            </li>
+                        </ul>
+                    </div>
+                            <div class="dxp-margin-top-bottom-4-left-minus2 dxp-social-float dxp-social-youtube-link-mobile" itemscope itemtype="http://schema.org/Organization">
+                                <a class="c-hyperlink" href="https://www.youtube.com/t/terms" target="_blank" data-bi-name="social_youtube-terms-and-service">
+                                    <span class="dxp-black-opacity-60-text dxp-font-weight-400">YouTube terms of service</span>
+                                </a>
+                            </div>
+
+                </section>
+            </div>
+        </div>
+
+
+<script async type="text/javascript">
+    $(document).ready(function () {
+        $('.social-media-share').click(function (e) {
+            if (!(typeof mscc === "undefined")) {
+                if (mscc.hasConsent()) {
+                    
+                    var shareUrl = (window.location.pathname.toLowerCase().indexOf("/events") > 0 || window.location.pathname.toLowerCase().indexOf("/gallery") > 0) ? encodeURI("https://developer.microsoft.com" + window.location.pathname + window.location.search) : encodeURI("https://developer.microsoft.com" + window.location.pathname);
+                    window.open($(this).attr('href') + shareUrl, '_blank', 'height=550, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 275) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+                    e.preventDefault();
+                }
+                else {
+                    if (!(typeof siteConsent === "undefined")) {
+                        if (confirm("This feature is currently disabled. To continue, update your cookie selections to accept all cookies.")) {
+                            
+                            siteConsent.manageConsent();
+                        }
+                    }
+                    else {
+                        
+                        mscc.setConsent();
+                    }
+
+                    e.preventDefault();
+                }
+            }
+        });
+    });
+</script>
+
+
+<script async defer>
+    $('#teams-share').click(function (e) {
+        if (!(typeof mscc === "undefined")) {
+            if (!mscc.hasConsent()) {
+                if (!(typeof siteConsent === "undefined")) {
+                    
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    if (confirm("This feature is currently disabled. To continue, update your cookie selections to accept all cookies.")) {
+                        
+                        siteConsent.manageConsent();
+                    }
+                }
+                else {
+                    
+                    mscc.setConsent();
+                }
+            }
+        }
+    });
+
+    
+    function initializeShareToTeams() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://teams.microsoft.com/share/launcher.js";
+        script.defer = true;
+        document.body.appendChild(script);
+    }
+
+    initializeShareToTeams();
+    setTimeout(function () {
+        $('.teams-share-button>a').attr("data-bi-name", "social_share-this-page-on-teams");
+    }, 1000);
+</script>
+
+            <div class="back-to-top p-g d-flex justify-content-end" data-mount="back-to-top">
+                <a href="#mainContent" class="btn btn-faint-secondary bg-body text-center w-sm-auto w-100" title="Back to top" aria-label="Back to top">
+                    <span class="glyph-prepend glyph-prepend-xsmall glyph-prepend-up d-inline-flex align-items-baseline"><span class="px-1"></span>Back to top</span>
+                </a>
+            </div>
+
+
+    <div>
+
+        <div id="footerWrapper">
+            
+            <div id="footerArea" class="uhf"  data-m='{"cN":"footerArea","cT":"Area_coreuiArea","id":"a2Body","sN":2,"aN":"Body"}'>
+                <div id="footerRegion"      data-region-key="footerregion" data-m='{"cN":"footerRegion","cT":"Region_coreui-region","id":"r1a2","sN":1,"aN":"a2"}' >
+
+    <div  id="footerUniversalFooter" data-m='{"cN":"footerUniversalFooter","cT":"Module_coreui-universalfooter","id":"m1r1a2","sN":1,"aN":"r1a2"}'  data-module-id="Category|footerRegion|coreui-region|footerUniversalFooter|coreui-universalfooter">
+        
+
+
+
+<footer id="uhf-footer" class="c-uhff context-uhf"  data-uhf-mscc-rq="false" data-footer-footprint="/DEV_Microsoft365/DEV_Microsoft365Footer, fromService: True" data-m='{"cN":"Uhf footer_cont","cT":"Container","id":"c1m1r1a2","sN":1,"aN":"m1r1a2"}'>
+        <nav class="c-uhff-nav" aria-label="Footer Resource links" data-m='{"cN":"Footer nav_cont","cT":"Container","id":"c1c1m1r1a2","sN":1,"aN":"c1m1r1a2"}'>
+            
+                <div class="c-uhff-nav-row">
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn1_cont","cT":"Container","id":"c1c1c1m1r1a2","sN":1,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="2">What's new</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Surface Pro 8 What's new" class="c-uhff-link" href="https://www.microsoft.com/en-us/d/surface-pro-8/8QWCRTQ8V8XG" data-m='{"cN":"Footer_WhatsNew_NewSurfacePro8_nav","id":"n1c1c1c1m1r1a2","sN":1,"aN":"c1c1c1m1r1a2"}'>Surface Pro 8</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Laptop Studio What's new" class="c-uhff-link" href="https://www.microsoft.com/en-us/d/surface-laptop-studio/8SRDF62SWKPF" data-m='{"cN":"Footer_WhatsNew_SurfaceLaptopStudio_nav","id":"n2c1c1c1m1r1a2","sN":2,"aN":"c1c1c1m1r1a2"}'>Surface Laptop Studio</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Pro X What's new" class="c-uhff-link" href="https://www.microsoft.com/en-us/d/surface-pro-x/8XTMB6C575MD" data-m='{"cN":"Whatsnew_SurfaceProX_nav","id":"n3c1c1c1m1r1a2","sN":3,"aN":"c1c1c1m1r1a2"}'>Surface Pro X</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Go 3 What's new" class="c-uhff-link" href="https://www.microsoft.com/en-us/d/surface-go-3/904H27D0CBWN" data-m='{"cN":"Footer_WhatsNew_SurfaceGo3_nav","id":"n4c1c1c1m1r1a2","sN":4,"aN":"c1c1c1m1r1a2"}'>Surface Go 3</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Duo 2 What's new" class="c-uhff-link" href="https://www.microsoft.com/en-us/d/surface-duo-2/9408KGXP4XJL" data-m='{"cN":"Footer_WhatsNew_SurfaceDuo2_nav","id":"n5c1c1c1m1r1a2","sN":5,"aN":"c1c1c1m1r1a2"}'>Surface Duo 2</a>
+                            </li>
+                            <li>
+                                <a aria-label="Surface Pro 7+ What's new" class="c-uhff-link" href="https://www.microsoft.com/es-us/d/surface-pro-7-plus/92WRLRCVZ4PR" data-m='{"cN":"Whatsnew_SurfacePro7_nav","id":"n6c1c1c1m1r1a2","sN":6,"aN":"c1c1c1m1r1a2"}'>Surface Pro 7+</a>
+                            </li>
+                            <li>
+                                <a aria-label="Windows 11 apps What's new" class="c-uhff-link" href="https://www.microsoft.com/windows/windows-11-apps" data-m='{"cN":"Footer_WhatsNew_Windows_11_apps_nav","id":"n7c1c1c1m1r1a2","sN":7,"aN":"c1c1c1m1r1a2"}'>Windows 11 apps</a>
+                            </li>
+                            <li>
+                                <a aria-label="HoloLens 2 What's new" class="c-uhff-link" href="https://www.microsoft.com/en-us/hololens" data-m='{"cN":"Footer_WhatsNew_Hololens2_nav","id":"n8c1c1c1m1r1a2","sN":8,"aN":"c1c1c1m1r1a2"}'>HoloLens 2</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn2_cont","cT":"Container","id":"c2c1c1m1r1a2","sN":2,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="2">Microsoft Store</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Account profile Microsoft Store" class="c-uhff-link" href="https://account.microsoft.com/" data-m='{"cN":"Footer_StoreandSupport_AccountProfile_nav","id":"n1c2c1c1m1r1a2","sN":1,"aN":"c2c1c1m1r1a2"}'>Account profile</a>
+                            </li>
+                            <li>
+                                <a aria-label="Download Center Microsoft Store" class="c-uhff-link" href="https://www.microsoft.com/en-us/download" data-m='{"cN":"Footer_StoreandSupport_DownloadCenter_nav","id":"n2c2c1c1m1r1a2","sN":2,"aN":"c2c1c1m1r1a2"}'>Download Center</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft Store support Microsoft Store" class="c-uhff-link" href="https://go.microsoft.com/fwlink/?linkid=2139749" data-m='{"cN":"Footer_StoreandSupport_SalesAndSupport_nav","id":"n3c2c1c1m1r1a2","sN":3,"aN":"c2c1c1m1r1a2"}'>Microsoft Store support</a>
+                            </li>
+                            <li>
+                                <a aria-label="Returns Microsoft Store" class="c-uhff-link" href="https://go.microsoft.com/fwlink/p/?LinkID=824764&clcid=0x409" data-m='{"cN":"MicrosoftStore_ExtendedHolidayReturns_nav","id":"n4c2c1c1m1r1a2","sN":4,"aN":"c2c1c1m1r1a2"}'>Returns</a>
+                            </li>
+                            <li>
+                                <a aria-label="Order tracking Microsoft Store" class="c-uhff-link" href="https://account.microsoft.com/orders" data-m='{"cN":"Footer_StoreandSupport_OrderTracking_nav","id":"n5c2c1c1m1r1a2","sN":5,"aN":"c2c1c1m1r1a2"}'>Order tracking</a>
+                            </li>
+                            <li>
+                                <a aria-label="Virtual workshops and training Microsoft Store" class="c-uhff-link" href="https://www.microsoft.com/en-us/store/workshops-training-and-events?icid=vl_uf_932020" data-m='{"cN":"Footer_StoreandSupport_StoreLocations_nav","id":"n6c2c1c1m1r1a2","sN":6,"aN":"c2c1c1m1r1a2"}'>Virtual workshops and training</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft Store Promise Microsoft Store" class="c-uhff-link" href="https://www.microsoft.com/en-us/store/b/why-microsoft-store?icid=footer_why-msft-store_7102020" data-m='{"cN":"Footer_StoreandSupport_MicrosoftPromise_nav","id":"n7c2c1c1m1r1a2","sN":7,"aN":"c2c1c1m1r1a2"}'>Microsoft Store Promise</a>
+                            </li>
+                            <li>
+                                <a aria-label="Flexible Payments Microsoft Store" class="c-uhff-link" href="https://www.microsoft.com/en-us/store/b/payment-financing-options?icid=footer_financing_vcc" data-m='{"cN":"Footer_StoreandSupport_Financing_nav","id":"n8c2c1c1m1r1a2","sN":8,"aN":"c2c1c1m1r1a2"}'>Flexible Payments</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn3_cont","cT":"Container","id":"c3c1c1m1r1a2","sN":3,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="2">Education</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Microsoft in education Education" class="c-uhff-link" href="https://www.microsoft.com/en-us/education" data-m='{"cN":"Footer_Education_MicrosoftInEducation_nav","id":"n1c3c1c1m1r1a2","sN":1,"aN":"c3c1c1m1r1a2"}'>Microsoft in education</a>
+                            </li>
+                            <li>
+                                <a aria-label="Office for students Education" class="c-uhff-link" href="https://www.microsoft.com/en-us/education/products/office/default.aspx" data-m='{"cN":"Footer_Education_OfficeForStudents_nav","id":"n2c3c1c1m1r1a2","sN":2,"aN":"c3c1c1m1r1a2"}'>Office for students</a>
+                            </li>
+                            <li>
+                                <a aria-label="Office 365 for schools Education" class="c-uhff-link" href="https://www.microsoft.com/en-us/microsoft-365/academic/compare-office-365-education-plans" data-m='{"cN":"Footer_Education_Office365ForSchools_nav","id":"n3c3c1c1m1r1a2","sN":3,"aN":"c3c1c1m1r1a2"}'>Office 365 for schools</a>
+                            </li>
+                            <li>
+                                <a aria-label="Deals for students & parents Education" class="c-uhff-link" href="https://www.microsoft.com/en-us/store/b/education?icid=CNavfooter_Studentsandeducation" data-m='{"cN":"Footer_Education_DealsForStudentsandParents_nav","id":"n4c3c1c1m1r1a2","sN":4,"aN":"c3c1c1m1r1a2"}'>Deals for students & parents</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft Azure in education Education" class="c-uhff-link" href="https://azure.microsoft.com/en-us/community/education/" data-m='{"cN":"Footer_MicrosoftAzureInEducation_nav","id":"n5c3c1c1m1r1a2","sN":5,"aN":"c3c1c1m1r1a2"}'>Microsoft Azure in education</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="c-uhff-nav-row">
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn4_cont","cT":"Container","id":"c4c1c1m1r1a2","sN":4,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="2">Enterprise</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Azure Enterprise" class="c-uhff-link" href="https://azure.microsoft.com/" data-m='{"cN":"Footer_Enterprise_MicrosoftAzure_nav","id":"n1c4c1c1m1r1a2","sN":1,"aN":"c4c1c1m1r1a2"}'>Azure</a>
+                            </li>
+                            <li>
+                                <a aria-label="AppSource  Enterprise" class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=808093" data-m='{"cN":"Footer_Enterprise_MicrosoftAppSource_nav","id":"n2c4c1c1m1r1a2","sN":2,"aN":"c4c1c1m1r1a2"}'>AppSource </a>
+                            </li>
+                            <li>
+                                <a aria-label="Automotive Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-us/industry/automotive" data-m='{"cN":"Footer_Enterprise_Automotive_nav","id":"n3c4c1c1m1r1a2","sN":3,"aN":"c4c1c1m1r1a2"}'>Automotive</a>
+                            </li>
+                            <li>
+                                <a aria-label="Government Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-us/industry/government" data-m='{"cN":"Footer_Enterprise_Government_nav","id":"n4c4c1c1m1r1a2","sN":4,"aN":"c4c1c1m1r1a2"}'>Government</a>
+                            </li>
+                            <li>
+                                <a aria-label="Healthcare Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-us/industry/health/microsoft-cloud-for-healthcare" data-m='{"cN":"Footer_Enterprise_Health_nav","id":"n5c4c1c1m1r1a2","sN":5,"aN":"c4c1c1m1r1a2"}'>Healthcare</a>
+                            </li>
+                            <li>
+                                <a aria-label="Manufacturing Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-us/industry/manufacturing/microsoft-cloud-for-manufacturing" data-m='{"cN":"Footer_Enterprise_Manufacturing_nav","id":"n6c4c1c1m1r1a2","sN":6,"aN":"c4c1c1m1r1a2"}'>Manufacturing</a>
+                            </li>
+                            <li>
+                                <a aria-label="Financial services Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-us/industry/financial-services/microsoft-cloud-for-financial-services" data-m='{"cN":"Footer_Enterprise_FinanciaServices_nav","id":"n7c4c1c1m1r1a2","sN":7,"aN":"c4c1c1m1r1a2"}'>Financial services</a>
+                            </li>
+                            <li>
+                                <a aria-label="Retail Enterprise" class="c-uhff-link" href="https://www.microsoft.com/en-us/industry/retail/microsoft-cloud-for-retail" data-m='{"cN":"Footer_Enterprise_Retail_nav","id":"n8c4c1c1m1r1a2","sN":8,"aN":"c4c1c1m1r1a2"}'>Retail</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn5_cont","cT":"Container","id":"c5c1c1m1r1a2","sN":5,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="2">Developer</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Microsoft Visual Studio Developer" class="c-uhff-link" href="https://visualstudio.microsoft.com/" data-m='{"cN":"Footer_Developer_MicrosoftVisualStudio_nav","id":"n1c5c1c1m1r1a2","sN":1,"aN":"c5c1c1m1r1a2"}'>Microsoft Visual Studio</a>
+                            </li>
+                            <li>
+                                <a aria-label="Windows Dev Center Developer" class="c-uhff-link" href="https://developer.microsoft.com/en-us/windows" data-m='{"cN":"Footer_Developer_WindowsDevCenter_nav","id":"n2c5c1c1m1r1a2","sN":2,"aN":"c5c1c1m1r1a2"}'>Windows Dev Center</a>
+                            </li>
+                            <li>
+                                <a aria-label="Developer Center Developer" class="c-uhff-link" href="https://developer.microsoft.com/" data-m='{"cN":"Footer_Developer_DeveloperCenter_nav","id":"n3c5c1c1m1r1a2","sN":3,"aN":"c5c1c1m1r1a2"}'>Developer Center</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft developer program Developer" class="c-uhff-link" href="https://developer.microsoft.com/en-us/store/register" data-m='{"cN":"Footer_Developer_MicrosoftDeveloperProgram_nav","id":"n4c5c1c1m1r1a2","sN":4,"aN":"c5c1c1m1r1a2"}'>Microsoft developer program</a>
+                            </li>
+                            <li>
+                                <a aria-label="Channel 9 Developer" class="c-uhff-link" href="https://channel9.msdn.com/" data-m='{"cN":"Footer_Developer_Channel9_nav","id":"n5c5c1c1m1r1a2","sN":5,"aN":"c5c1c1m1r1a2"}'>Channel 9</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft 365 Dev Center Developer" class="c-uhff-link" href="https://developer.microsoft.com/microsoft-365" data-m='{"cN":"Footer_Developer_Microsoft365DevCenter_nav","id":"n6c5c1c1m1r1a2","sN":6,"aN":"c5c1c1m1r1a2"}'>Microsoft 365 Dev Center</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft 365 Developer Program Developer" class="c-uhff-link" href="https://developer.microsoft.com/microsoft-365/dev-program" data-m='{"cN":"Footer_Developer_Microsoft365DeveloperProgram_nav","id":"n7c5c1c1m1r1a2","sN":7,"aN":"c5c1c1m1r1a2"}'>Microsoft 365 Developer Program</a>
+                            </li>
+                            <li>
+                                <a aria-label="Microsoft Garage Developer" class="c-uhff-link" href="https://www.microsoft.com/en-us/garage/" data-m='{"cN":"Microsoft Garage_nav","id":"n8c5c1c1m1r1a2","sN":8,"aN":"c5c1c1m1r1a2"}'>Microsoft Garage</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                    <div class="c-uhff-nav-group" data-m='{"cN":"footerNavColumn6_cont","cT":"Container","id":"c6c1c1m1r1a2","sN":6,"aN":"c1c1m1r1a2"}'>
+                        <div class="c-heading-4" role="heading" aria-level="2">Company</div>
+                        <ul class="c-list f-bare">
+                            <li>
+                                <a aria-label="Careers Company" class="c-uhff-link" href="https://careers.microsoft.com/" data-m='{"cN":"Footer_Company_Careers_nav","id":"n1c6c1c1m1r1a2","sN":1,"aN":"c6c1c1m1r1a2"}'>Careers</a>
+                            </li>
+                            <li>
+                                <a aria-label="About Microsoft Company" class="c-uhff-link" href="https://www.microsoft.com/en-us/about" data-m='{"cN":"Footer_Company_AboutMicrosoft_nav","id":"n2c6c1c1m1r1a2","sN":2,"aN":"c6c1c1m1r1a2"}'>About Microsoft</a>
+                            </li>
+                            <li>
+                                <a aria-label="Company news Company" class="c-uhff-link" href="https://news.microsoft.com/" data-m='{"cN":"Footer_Company_CompanyNews_nav","id":"n3c6c1c1m1r1a2","sN":3,"aN":"c6c1c1m1r1a2"}'>Company news</a>
+                            </li>
+                            <li>
+                                <a aria-label="Privacy at Microsoft Company" class="c-uhff-link" href="https://privacy.microsoft.com/en-us" data-m='{"cN":"Footer_Company_PrivacyAtMicrosoft_nav","id":"n4c6c1c1m1r1a2","sN":4,"aN":"c6c1c1m1r1a2"}'>Privacy at Microsoft</a>
+                            </li>
+                            <li>
+                                <a aria-label="Investors Company" class="c-uhff-link" href="https://www.microsoft.com/investor/default.aspx" data-m='{"cN":"Footer_Company_Investors_nav","id":"n5c6c1c1m1r1a2","sN":5,"aN":"c6c1c1m1r1a2"}'>Investors</a>
+                            </li>
+                            <li>
+                                <a aria-label="Diversity and inclusion Company" class="c-uhff-link" href="https://www.microsoft.com/en-us/diversity/" data-m='{"cN":"Footer_Company_DiversityAndInclusion_nav","id":"n6c6c1c1m1r1a2","sN":6,"aN":"c6c1c1m1r1a2"}'>Diversity and inclusion</a>
+                            </li>
+                            <li>
+                                <a aria-label="Accessibility Company" class="c-uhff-link" href="https://www.microsoft.com/en-us/accessibility" data-m='{"cN":"Footer_Company_Accessibility_nav","id":"n7c6c1c1m1r1a2","sN":7,"aN":"c6c1c1m1r1a2"}'>Accessibility</a>
+                            </li>
+                            <li>
+                                <a aria-label="Security Company" class="c-uhff-link" href="https://www.microsoft.com/en-us/security" data-m='{"cN":"Footer_Company_Security_nav","id":"n8c6c1c1m1r1a2","sN":8,"aN":"c6c1c1m1r1a2"}'>Security</a>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+        </nav>
+    <div class="c-uhff-base">
+                <a id="locale-picker-link" aria-label="Content Language Selector. Currently set to English (United States)" class="c-uhff-link c-uhff-lang-selector c-glyph glyph-world" href="https://www.microsoft.com/en-us/locale.aspx" data-m='{"cN":"locale_picker(US)_nav","id":"n7c1c1m1r1a2","sN":7,"aN":"c1c1m1r1a2"}'>English (United States)</a>
+
+        <nav aria-label="Microsoft corporate links">
+            <ul class="c-list f-bare" data-m='{"cN":"Corp links_cont","cT":"Container","id":"c8c1c1m1r1a2","sN":8,"aN":"c1c1m1r1a2"}'>
+                                <li  id="c-uhff-footer_sitemap">
+                    <a class="c-uhff-link" href="https://www.microsoft.com/en-us/sitemap1.aspx" data-mscc-ic="false" data-m='{"cN":"Footer_Sitemap_nav","id":"n1c8c1c1m1r1a2","sN":1,"aN":"c8c1c1m1r1a2"}'>Sitemap</a>
+                </li>
+                <li  id="c-uhff-footer_contactus">
+                    <a class="c-uhff-link" href="https://support.microsoft.com/contactus" data-mscc-ic="false" data-m='{"cN":"Footer_ContactUs_nav","id":"n2c8c1c1m1r1a2","sN":2,"aN":"c8c1c1m1r1a2"}'>Contact Microsoft</a>
+                </li>
+                <li  id="c-uhff-footer_privacyandcookies">
+                    <a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-mscc-ic="false" data-m='{"cN":"Footer_PrivacyandCookies_nav","id":"n3c8c1c1m1r1a2","sN":3,"aN":"c8c1c1m1r1a2"}'>Privacy </a>
+                </li>
+                <li class=" x-hidden" id="c-uhff-footer_managecookies">
+                    <a class="c-uhff-link" href="#" data-mscc-ic="false" data-m='{"cN":"Footer_ManageCookies_nav","id":"n4c8c1c1m1r1a2","sN":4,"aN":"c8c1c1m1r1a2"}'>Manage cookies</a>
+                </li>
+                <li  id="c-uhff-footer_termsofuse">
+                    <a class="c-uhff-link" href="https://go.microsoft.com/fwlink/?LinkID=206977" data-mscc-ic="false" data-m='{"cN":"Footer_TermsOfUse_nav","id":"n5c8c1c1m1r1a2","sN":5,"aN":"c8c1c1m1r1a2"}'>Terms of use</a>
+                </li>
+                <li  id="c-uhff-footer_trademarks">
+                    <a class="c-uhff-link" href="https://www.microsoft.com/trademarks" data-mscc-ic="false" data-m='{"cN":"Footer_Trademarks_nav","id":"n6c8c1c1m1r1a2","sN":6,"aN":"c8c1c1m1r1a2"}'>Trademarks</a>
+                </li>
+                <li  id="c-uhff-footer_safetyandeco">
+                    <a class="c-uhff-link" href="https://www.microsoft.com/en-us/devices/safety-and-eco " data-mscc-ic="false" data-m='{"cN":"Footer_SafetyAndEco_nav","id":"n7c8c1c1m1r1a2","sN":7,"aN":"c8c1c1m1r1a2"}'>Safety & eco</a>
+                </li>
+                <li  id="c-uhff-footer_aboutourads">
+                    <a class="c-uhff-link" href="https://choice.microsoft.com" data-mscc-ic="false" data-m='{"cN":"Footer_AboutourAds_nav","id":"n8c8c1c1m1r1a2","sN":8,"aN":"c8c1c1m1r1a2"}'>About our ads</a>
+                </li>
+
+                <li>© Microsoft 2022</li>
+                
+            </ul>
+        </nav>
+    </div>
+    
+</footer>
+
+
+
+
+    </div>
+        </div>
+
+    </div>
+
+    
+        </div>
+        <script type="text/javascript" src="/common/ux/staticres/js/common-nav.min.js?v=3.0"></script>
+    
+    <script>
+        fdRequire(['init']);
+    </script>
+
+    <div id="expiredAgreements"></div>
+    <div id="signInPrompt" class="modal c-dialog f-flow" aria-hidden="true">
+        <div class="modal-dialog" role="dialog" aria-label="Flow scroll">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-subtitle">Sign in required</h4>
+                </div>
+                <div class="modal-body">
+                    <br /><p>Your session has expired.  Please sign-in again to continue.  Unfortunately any unsaved changes will be lost.</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-group c-group">
+                        <a href="/aad?action=signin&returnPath=/en-us/microsoft-365" role="button" class="btn btn-primary c-button f-primary">Sign in</a>
+                        <button type="cancel" class="btn c-button" id="signInCancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <script type="text/javascript">
+        if ((typeof mscc === "undefined") || !mscc.hasConsent()) {
+            var pathBits = location.pathname.split('/');
+            document.cookie.split("; ").forEach(cookie => {
+                var cookieName = cookie.split("=")[0].trim();
+                if (cookieName.toLowerCase() !== "mscc") {
+                    
+                    
+                    document.cookie = cookieName + "=; expires = Thu, 01 Jan 1970 00:00:00 UTC;";
+
+                    
+                    // Following code is adapted from https://stackoverflow.com/a/5886746
+                    var pathCurrent = ' path=';
+                    for (var i = 0; i < pathBits.length; i++) {
+                        pathCurrent += ((pathCurrent.substr(-1) != '/') ? '/' : '') + pathBits[i];
+                        document.cookie = cookieName + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC;' + pathCurrent + ';';
+                    }
+                }
+            });
+        }
+    </script>
+
+    
+            <script type="text/javascript" async>
+                function initializeClarity() {
+                        (function (c, l, a, r, i, t, y) {
+                            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+                            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+                        })(window, document, "clarity", "script", "88ezr1nuiy");
+                    }
+
+                    if (!(typeof mscc === "undefined")) {
+                        if (!mscc.hasConsent()) {
+                            mscc.on('consent', initializeClarity);
+                        }
+                        else {
+                            initializeClarity();
+                        }
+                    }
+            </script>
+
+
+
+        <script type="text/javascript">
+    
+    function initializeOneDSScripts() {
+        try {
+            window.oneDSAnalytics = new oneDS.ApplicationInsights();
+            window.owap = window.oneDSAnalytics;
+            var config = {
+                instrumentationKey: "93558ae90ea24be7acd03b05bcaae3d2-8e996802-0a93-49c6-9b6b-a15d9a33f282-6898",
+                channelConfiguration: {
+                    
+                    disableTelemetry: false,
+                    eventsLimitInMem: 50,
+                },
+                propertyConfiguration: {
+                    userConsented: mscc.hasConsent()
+                },
+                webAnalyticsConfiguration: { // Web Analytics Plugin configuration
+                    autoCapture: {
+                        scroll: true,
+                        resize: true,
+                        urlCollectQuery: true,
+                        useDefaultContentName: true,
+                    },
+                    coreData: {
+                        pageName: "microsoft-365/homepage",
+                    },
+                    useShortNameForContentBlob: false
+
+                }
+            };
+           
+            window.oneDSAnalytics.initialize(config, [])
+
+        } catch {
+        }
+    }
+</script>
+
+<script async>
+    
+    if (!(typeof mscc === "undefined")) {
+        if (!mscc.hasConsent()) {
+            mscc.on('consent', initializeOneDSScripts);
+        }
+        else {
+            initializeOneDSScripts();
+        }
+    }
+</script>
+
+
+    <script>
+        window.fdPageMenuId = "homepage";
+        // Highlight current FD menu item
+        if (window.msCommonShell) {
+            msCommonShell.update({ currentMenuItemId: window.fdPageMenuId });
+        }
+        else {
+            window.onShellReadyToLoad = function () {
+                window.onShellReadyToLoad = null;
+                msCommonShell.update({ currentMenuItemId: window.fdPageMenuId });
+            }
+        }
+    </script>
+</body>
+</html>
