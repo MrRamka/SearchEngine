@@ -1,9 +1,20 @@
 import re
+
+import nltk
 from bs4 import BeautifulSoup
+from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
 import os
 from pathlib import Path
+
+NLTK_PACKAGES = [
+    'tokenizers/punkt', 'corpora/stopwords', 'corpora/wordnet', 'corpora/omw-1.4']
+for package in NLTK_PACKAGES:
+    try:
+        nltk.find(package)
+    except Exception:
+        nltk.download(package.split('/')[1])
 
 CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -34,9 +45,25 @@ def write_file(filename, words):
         file.write(f'{word}\n')
 
 
+def lemmatize(tokens):
+    lemmatizer = WordNetLemmatizer()
+    lemma_token = dict()
+
+    for token in tokens:
+
+        lemmatized = lemmatizer.lemmatize(token)
+
+        mapped_tokens = lemma_token.get(lemmatized, [])
+        mapped_tokens.append(token)
+
+        lemma_token[lemmatized] = mapped_tokens
+    return lemma_token
+
+
 def normalize_data():
     data_path = os.path.join(os.path.dirname(CURRENT_PATH), 'task1', 'task1', 'pages')
     Path("data").mkdir(parents=True, exist_ok=True)
+    all_tokens = []
     for file_name in os.listdir(data_path):
         print(f"Normalize: {file_name}")
         with open(os.path.join(data_path, file_name), 'r', encoding='utf-8') as data_file:
@@ -61,6 +88,13 @@ def normalize_data():
             filtered_tokens = [word for word in filtered_tokens if word.isalpha()]
 
             write_file(file_name.replace(".html", ".txt"), filtered_tokens)
+
+            all_tokens += filtered_tokens
+
+    lemmatize_tokens = lemmatize(list(set(all_tokens)))
+    with open("lemmas.txt", 'w', encoding='utf-8') as lemmas:
+        for key, value in lemmatize_tokens.items():
+            lemmas.write(f'{key}: {value}\n')
 
 
 if __name__ == '__main__':
