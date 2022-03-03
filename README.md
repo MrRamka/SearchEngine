@@ -28,3 +28,16 @@ Run script
 ```bash
 python main.py
 ```
+
+#### Task 2 - Tokenization and lemmatization
+
+Change the directory to the run script
+```bash
+cd task2
+```
+
+Run script. It creates a token file for each source and a lemmatization file
+
+```bash
+python main.py
+```
