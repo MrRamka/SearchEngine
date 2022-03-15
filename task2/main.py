@@ -1,3 +1,4 @@
+import json
 import re
 
 import nltk
@@ -8,13 +9,6 @@ from nltk.tokenize import RegexpTokenizer
 import os
 from pathlib import Path
 
-NLTK_PACKAGES = [
-    'tokenizers/punkt', 'corpora/stopwords', 'corpora/wordnet', 'corpora/omw-1.4']
-for package in NLTK_PACKAGES:
-    try:
-        nltk.find(package)
-    except Exception:
-        nltk.download(package.split('/')[1])
 
 CURRENT_PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -94,7 +88,7 @@ def normalize_data():
     lemmatize_tokens = lemmatize(list(set(all_tokens)))
     with open("lemmas.txt", 'w', encoding='utf-8') as lemmas:
         for key, value in lemmatize_tokens.items():
-            lemmas.write(f'{key}: {value}\n')
+            lemmas.write(f'{key} {value}\n')
 
 
 if __name__ == '__main__':
