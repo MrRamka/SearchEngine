@@ -41,3 +41,28 @@ Run script. It creates a token file for each source and a lemmatization file
 ```bash
 python main.py
 ```
+
+#### Task 3 - Inverted index and Boolean search
+
+Change the directory to the run script
+```bash
+cd task3
+```
+
+Run script. It creates `index.json` file with indexes
+
+```bash
+python main.py
+```
+
+Run search script. You can edit query in `search.py`
+```bash
+python search.py
+```
+
+Result:
+* Parsed query
+* Suitable documents
+* Found words
+
+![This is an image](./img/boolean_search_result.png)
