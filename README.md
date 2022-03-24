@@ -66,3 +66,16 @@ Result:
 * Found words
 
 ![This is an image](./img/boolean_search_result.png)
+
+#### Task 4 - TF-IDF
+
+Change the directory to the run script
+```bash
+cd task4
+```
+
+Run script
+
+```bash
+python main.py
+```
