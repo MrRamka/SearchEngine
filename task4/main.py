@@ -59,7 +59,7 @@ class TFIDFHelper:
         idfs = dict()
         for token, documents in self.indexes.items():
             df = len(documents)
-            idf = math.log(100 / df)
+            idf = math.log(self.page_count / df)
             if lemmatize:
                 token = self.lemma_function(token)
             idfs[token] = idf
